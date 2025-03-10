@@ -19,9 +19,6 @@ body {
   color: var(--lightAccent000);
   margin: 0px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  animation-name: landing;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
 }
 
 h1 {
@@ -90,15 +87,6 @@ h2 {
   animation-name: revealSections;
   animation-duration: 1s;
   animation-fill-mode: forwards;
-}
-
-@keyframes landing {
-  from {
-      opacity: 0;
-  }
-  to {
-      opacity: 1;
-  }
 }
 
 @keyframes navigationFade {
