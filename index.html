@@ -1,11 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>maghamez.com</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
+  <nav id="siteNavigation">
+    <span id="navigationTitle">maghamez.com</span>
+    <br>
+    <br>
+    <img id="profilePicture" src="images/profilePhoto.jpeg">
+    <br>
+    <div style="padding-top: 50%; padding-bottom: 50%">
+      <button class="navigationLinks" onclick="switchSection('home')">HOME</button>
+      <br>
+      <br>
+      <button class="navigationLinks" onclick="switchSection('experience')">EXPERIENCE</button>
+      <br>
+      <br>
+      <button class="navigationLinks" onclick="switchSection('projects')">PROJECTS</button>
+      <br>
+      <br>
+      <button class="navigationLinks" onclick="switchSection('contact')">CONTACT</button>
+    </div>
+  </nav>
+
+  <div style="margin-left: 200px; margin-right: 10px; padding-top: 20px">
+    <div class="portfolioSections" id="home">
+        <h1 class="middle">Hi there, I'm JMag!</h1>
+        Here, I've put together my portfolio!
+
+    </div>
+
+    <div hidden class="portfolioSections" id="experience">
+      <h1 class="middle">Languages</h1>
+    </div>
+
+    <div hidden class="portfolioSections" id="projects">
+
+    </div>
+
+    <div hidden class="portfolioSections" id="contact">
+
+    </div>
+
+  </div>
   
+  <script type="text/javascript" src="script.js"></script>
 </body>
   
 </html>
