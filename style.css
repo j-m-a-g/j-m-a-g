@@ -23,9 +23,22 @@ body {
 
 h1 {
   font-weight: 400;
+  cursor: default;
 }
-h2 {
+
+h3 {
   font-weight: 400;
+  cursor: default;
+}
+
+footer {
+  background-color: var(--darkAccent800);
+  padding: 10px;
+  opacity: 0.5;
+  float: right;
+  border-radius: 5px 0px 0px 0px;
+  margin-top: 20px;
+  cursor: default;
 }
 
 .centered {
@@ -43,12 +56,17 @@ h2 {
   border-radius: 10px;
 }
 
+#mainContent {
+  margin-left: 210px;
+  margin-right: 20px;
+  padding-top: 25px;
+}
+
 /* Styles for the site's navigation */
 .navigationLinks {
   background-color: transparent;
   border: none;
   color: var(--lightAccent000);
-  text-decoration: none;
   padding-left: 4px;
   padding-right: 0px;
   letter-spacing: 4px;
@@ -57,6 +75,25 @@ h2 {
   animation-name: navigationFade;
   animation-duration: 0.25s;
   animation-fill-mode: forwards;
+}
+
+.toggleNavigationButtons {
+  background-color: transparent;
+  border: none;
+  color: var(--lightAccent000);
+  padding-left: 4px;
+  padding-right: 0px;
+  letter-spacing: 4px;
+}
+.toggleNavigationButtons:hover {
+  animation-name: navigationFade;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+}
+
+#openPanel {
+  position: fixed;
+  padding-left: 10px;
 }
 
 #siteNavigation {
@@ -68,8 +105,6 @@ h2 {
 
 #navigationTitle {
   color: dimgray;
-  margin-top: auto;
-  margin-bottom: auto;
   cursor: default;
 }
 
@@ -82,11 +117,40 @@ h2 {
 }
 
 /* Styles for the home page */
-#home {
+#Home {
   background-color: var(--darkAccent800);
   animation-name: revealSections;
   animation-duration: 1s;
   animation-fill-mode: forwards;
+}
+
+#webpageName:hover {
+  text-decoration-line: underline;
+  text-decoration-color: red;
+  text-decoration-style: wavy;
+}
+
+.greeting {
+  text-align: center;
+}
+h1.greeting {
+  font-weight: 300;
+}
+
+div.projectShowcase {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+}
+p.projectShowcase {
+  opacity: 0.5;
+  cursor: default;
+}
+
+#josephSays {
+  background-color: rgba(220, 20, 60, 0.25);
 }
 
 @keyframes navigationFade {
@@ -102,6 +166,15 @@ h2 {
   }
   to {
       opacity: 1;
-      box-shadow: 5px 5px 0px var(--lightAccent400);
+      box-shadow: 10px 7.5px 0px var(--lightAccent400);
+  }
+}
+
+@keyframes toggleMenuAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+      opacity: 1;
   }
 }

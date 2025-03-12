@@ -4,52 +4,112 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>maghamez.com</title>
+  <title id="pageTitle">Home | maghamez.com</title>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
+  <header hidden id="openPanel">
+    <button class="toggleNavigationButtons" onclick="hideMenu(false)">☰ MENU</button>
+    <span id="navigationTitle">| maghamez.com</span>
+  </header>
   <nav id="siteNavigation">
+    <button
+      class="toggleNavigationButtons"
+      style="margin-bottom: 20px"
+      onclick="hideMenu(true)">
+      ╳ COLLAPSE
+    </button>
+    <br>
     <span id="navigationTitle">maghamez.com</span>
     <br>
     <br>
     <img id="profilePicture" src="images/profilePhoto.jpeg">
     <br>
     <div style="padding-top: 50%; padding-bottom: 50%">
-      <button class="navigationLinks" onclick="switchSection('home')">HOME</button>
+      <button class="navigationLinks" onclick="switchSection('Home')">HOME</button>
+      <span style="opacity: 0.5; font-size: 14px; cursor: default">& PROJECTS</span>
       <br>
       <br>
-      <button class="navigationLinks" onclick="switchSection('experience')">EXPERIENCE</button>
+      <button class="navigationLinks" onclick="switchSection('Experience')">EXPERIENCE</button>
       <br>
       <br>
-      <button class="navigationLinks" onclick="switchSection('projects')">PROJECTS</button>
-      <br>
-      <br>
-      <button class="navigationLinks" onclick="switchSection('contact')">CONTACT</button>
+      <button class="navigationLinks" onclick="switchSection('Contact')">CONTACT</button>
     </div>
   </nav>
 
-  <div style="margin-left: 200px; margin-right: 10px; padding-top: 20px">
-    <div class="portfolioSections" id="home">
-        <h1 class="middle">Hi there, I'm JMag!</h1>
-        Here, I've put together my portfolio!
+  <div id="mainContent">
+    <div class="portfolioSections" id="Home">
+        <h1 class="middle greeting">Welcome to <span id="webpageName">maghamez</span>.com</h1>
+        <table>
+          <tr>
+            <td style="width: 50%">
+              <div class="projectShowcase" id="emotionDetector">
+                <h3>Emotion Detector</h3>
+                <p class="projectShowcase">
+                  See if you are happy, sad, angry, disgusted, or more! Built with the Roboflow inference API and pipelines.
+                </p>
+              </div>
+            </td>
+            <td>
+              <div class="projectShowcase" id="escapeXavier">
+                <h3>Escape Xavier</h3>
+                <p class="projectShowcase">
+                  An escape room that will test your technological skills.
+                </p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="projectShowcase" id="howOldIsMyPlant">
+                <h3>How Old Is My Plant</h3>
+                <p class="projectShowcase">
+                  See how old your potted plant might be in a range of 1-4 weeks or if it is ready to be harvested!
+                </p>
+              </div>
+            </td>
+            <td>
+              <div class="projectShowcase" id="josephSays">
+                <h3>Joseph Says</h3>
+                <p class="projectShowcase">
+                  A game where following instructions is the only advice you'll need.
+                </p>
+                <h3>Joseph Says: Offline Edition</h3>
+                <p class="projectShowcase">Now playable offline! Play anytime and anywhere. No internet connection required.</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="projectShowcase" id="powerMaster">
+                <h3>PowerMaster</h3>
+                <p class="projectShowcase">
+                  Can't find the previously included power plans in your computer's control panel? Or do you just want to squeeze the most power efficiency or performance out of your device? PowerMaster is the app that solves this with an easy-to-use UI that allows you to quickly change your power mode with just a couple of clicks.
+                </p>
+              </div>
+            </td>
+            <td>
 
+            </td>
+          </tr>
+        </table>
     </div>
 
-    <div hidden class="portfolioSections" id="experience">
+    <div hidden class="portfolioSections" id="Experience">
       <h1 class="middle">Languages</h1>
     </div>
 
-    <div hidden class="portfolioSections" id="projects">
-
-    </div>
-
-    <div hidden class="portfolioSections" id="contact">
+    <div hidden class="portfolioSections" id="Contact">
 
     </div>
 
   </div>
   
+  <footer>
+    J. Maghamez - 2025
+  </footer>
+
   <script type="text/javascript" src="script.js"></script>
 </body>
   
