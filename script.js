@@ -33,7 +33,9 @@ function hideMenu(isHidden) {
     openPanel.style.animation = "toggleMenuAnimation 1s forwards";
   }
   else {
-    mainContent.style.marginLeft = "210px";
+    if (screen.width > 1836) {
+      mainContent.style.marginLeft = "210px";
+    }
     siteNavigation.hidden = false;
     siteNavigation.style.animation = "toggleMenuAnimation 1s forwards";
 
