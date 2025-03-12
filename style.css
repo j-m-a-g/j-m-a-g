@@ -31,6 +31,13 @@ h3 {
   cursor: default;
 }
 
+hr {
+  opacity: 0.125;
+  width: 80%;
+  border-style: solid;
+  margin-bottom: 15px;
+}
+
 footer {
   background-color: var(--darkAccent800);
   padding: 10px;
@@ -132,6 +139,7 @@ footer {
   background-repeat: no-repeat;
   height: 400px;
   border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 #webpageName:hover {
@@ -147,16 +155,57 @@ h1.greeting {
   font-weight: 300;
 }
 
+.showcaseContainer {
+  display: flex;
+}
+
 div.projectShowcase {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin: 5px;
+  padding: 20px;
   border-radius: 10px;
+  width: 50%;
 }
 p.projectShowcase {
   opacity: 0.5;
   cursor: default;
+}
+
+.projectPreview {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.projectIcon {
+  margin-top: -25px;
+  margin-bottom: -10px;
+  width: 48px;
+  height: 48px;
+}
+
+.projectLink {
+  opacity: 0.75;
+}
+a.projectLink {
+  padding: 5px;
+  text-decoration-line: none;
+  color: cornflowerblue;
+}
+a.projectLink:hover {
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.125);
+}
+img.projectLink {
+  margin-right: 5px;
+  width: 16px;
+  height: 16px;
+}
+
+#emotionDetector {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+#escapeXavier {
+  background-color: rgba(89, 133, 255, 0.25);
 }
 
 #josephSays {
@@ -168,7 +217,7 @@ p.projectShowcase {
 }
 
 #myMemes {
-  background-color: rgba(245, 245, 220, 0.25);
+  background-color: rgba(255, 255, 0, 0.25);
 }
 
 /* ANIMATIONS */
@@ -207,5 +256,13 @@ p.projectShowcase {
 
   #mainContent {
     margin-left: 10px;
+  }
+
+  .showcaseContainer {
+    display: block;
+  }
+
+  div.projectShowcase {
+    width: 90%;
   }
 }
