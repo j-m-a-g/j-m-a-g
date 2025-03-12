@@ -17,13 +17,13 @@ function switchSection(currentShowing) {
   contact.hidden = true;
   contact.style.animation = "";
 
+  document.getElementById("pageTitle").innerHTML = currentShowing + " | maghamez.com";
   document.getElementById(currentShowing).hidden = false;
   document.getElementById(currentShowing).style.animation = "revealSections 1s forwards";
-
-  document.getElementById("pageTitle").innerHTML = currentShowing + " | maghamez.com";
 }
 
 function hideMenu(isHidden) {
+  console.log(window.innerWidth)
   if (isHidden) {
     mainContent.style.marginLeft = "10px";
     siteNavigation.hidden = true;
@@ -33,7 +33,7 @@ function hideMenu(isHidden) {
     openPanel.style.animation = "toggleMenuAnimation 1s forwards";
   }
   else {
-    if (screen.width > 1836) {
+    if (window.innerWidth > 587) {
       mainContent.style.marginLeft = "210px";
     }
     siteNavigation.hidden = false;
