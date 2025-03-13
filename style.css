@@ -62,6 +62,7 @@ footer {
   padding-right: 10px;
   padding-bottom: 10px;
   border-radius: 10px;
+  background-color: var(--darkAccent800);
 }
 
 #mainContent {
@@ -100,6 +101,14 @@ footer {
   animation-fill-mode: forwards;
 }
 
+.welcomeSection {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
 #openPanel {
   position: fixed;
   padding-left: 10px;
@@ -127,21 +136,9 @@ footer {
 
 /* Styles for the Home page */
 #Home {
-  background-color: var(--darkAccent800);
   animation-name: revealSections;
   animation-duration: 1s;
   animation-fill-mode: forwards;
-}
-
-#welcomeSection {
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-    url(images/welcomeImage.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 400px;
-  border-radius: 10px;
-  margin-bottom: 20px;
 }
 
 #webpageName:hover {
@@ -218,35 +215,49 @@ img.projectLink {
 }
 
 #calcyoulus {
-  background-color: rgba(170, 242, 85, 0.25);
+  background-color: rgba(170, 242, 85, 0.125);
 }
 #emotionDetector {
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.125);
 }
 #escapeXavier {
-  background-color: rgba(89, 133, 255, 0.25);
+  background-color: rgba(89, 133, 255, 0.125);
 }
 #expandCalculator {
-  background-color: rgba(33, 150, 243, 0.25);
+  background-color: rgba(33, 150, 243, 0.125);
 }
 #howOldIsMyPlant {
-  background-color: rgba(184, 134, 11, 0.25);
+  background-color: rgba(184, 134, 11, 0.125);
 }
 #josephSays {
-  background-color: rgba(220, 20, 60, 0.25);
+  background-color: rgba(220, 20, 60, 0.125);
 }
 #powerMaster {
-  background-color: rgba(234, 196, 82, 0.25);
+  background-color: rgba(234, 196, 82, 0.125);
 }
 #myMemes {
-  background-color: rgba(255, 255, 0, 0.25);
+  background-color: rgba(255, 255, 0, 0.125);
+}
+
+/* Styles for the Experience page */
+.languageIcon {
+  width: 56px;
+  height: 56px;
+  filter: invert(100%);
+  margin-right: 5px;
+}
+
+#python {
+  background-color: rgba(55, 118, 171, 0.125);
+}
+#htmlCSSJS {
+  background-image: conic-gradient(rgba(227, 79, 38, 0.125), rgba(102, 51, 153, 0.125), rgba(247, 223, 30, 0.125));
+}
+#cSharpXAML {
+  background-image: linear-gradient(rgba(66, 165, 245, 0.125), rgba(87, 48, 214, 0.125));
 }
 
 /* Styles for the Contact page */
-#Contact {
-  background-color: rgba(170, 242, 85, 0.125);
-}
-
 .profileLink {
   cursor: pointer;
 }
@@ -260,13 +271,13 @@ a.profileLink:hover {
 }
 
 #gitHubContact {
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.125);
 }
 #dmojContact {
-  background-color: rgb(247, 216, 4, 0.25);
+  background-color: rgb(247, 216, 4, 0.125);
 }
 #microsoftDeveloperAccount {
-  background-color: rgba(0, 0, 255, 0.25);
+  background-color: rgba(0, 0, 255, 0.125);
 }
 
 /* ANIMATIONS */
