@@ -8,7 +8,7 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body>
+<body onload="if (window.innerWidth <= 587) { siteNavigation.hidden = true; openPanel.hidden = false }">
   <header hidden id="openPanel">
     <button class="toggleNavigationButtons" onclick="hideMenu(false)">☰ MENU</button>
     <span id="navigationTitle">| maghamez.com</span>
@@ -51,6 +51,20 @@
       <hr>
 
       <div class="showcaseContainer">
+        <div class="projectShowcase" id="calcyoulus">
+          <img class="projectPreview" src="images/projects/calcyoulusPreview.png">
+          <img class="projectIcon" src="images/projects/calcyoulusIconRounded.svg">
+          <span class="projectStatus">DEVELOPMENT IN PROGRESS</span>
+          <h3>Calcyoulus</h3>
+          <p class="projectShowcase">
+            Rewrite of the Expand Calculator Xamarin Forms Android app.
+          </p>
+          <a class="projectLink" href="https://github.com/j-m-a-g/Calcyoulus" target="_blank">
+            <img class="projectLink" src="images/github-mark-white.svg">
+            View Repository
+          </a>
+        </div>
+
         <div class="projectShowcase" id="emotionDetector">
           <img class="projectPreview" src="images/projects/emotionDetectorPreview.png">
           <img class="projectIcon" src="images/projects/slightlySmilingFace.png">
@@ -64,6 +78,9 @@
           </a>
         </div>
 
+      </div>
+
+      <div class="showcaseContainer">
         <div class="projectShowcase" id="escapeXavier">
           <img class="projectPreview" src="images/projects/escapeXavierPreview.png">
           <img class="projectIcon" src="images/projects/key5985E1.svg">
@@ -78,6 +95,20 @@
           <br>
           <br>
           <a class="projectLink" href="https://github.com/j-m-a-g/EscapeXavier" target="_blank">
+            <img class="projectLink" src="images/github-mark-white.svg">
+            View Repository
+          </a>
+        </div>
+
+        <div class="projectShowcase" id="expandCalculator">
+          <img class="projectPreview" src="images/projects/expandCalculatorPreview.png">
+          <img class="projectIcon" src="images/projects/expandCalculatorIcon.png">
+          <span class="projectStatus">INCOMPLETE</span>
+          <h3>Expand Calculator</h3>
+          <p class="projectShowcase">
+            More than just your ordinary calculator.
+          </p>
+          <a class="projectLink" href="https://github.com/j-m-a-g/ExpandCalculator" target="_blank">
             <img class="projectLink" src="images/github-mark-white.svg">
             View Repository
           </a>
@@ -121,6 +152,7 @@
 
           <img class="projectPreview" src="images/projects/josephSaysOfflinePreview.png">
           <img class="projectIcon" src="images/projects/comicBubbleD16D6A.svg">
+          <span class="projectStatus">RELEASED</span>
           <h3>Joseph Says: Offline Edition</h3>
           <p class="projectShowcase">Now playable offline! Play anytime and anywhere. No internet connection required.</p>
           <script type="module" src="https://get.microsoft.com/badge/ms-store-badge.bundled.js"></script>
@@ -140,6 +172,7 @@
         <div class="projectShowcase" id="powerMaster">
           <img class="projectPreview" src="images/projects/powerMasterPreview.svg">
           <img class="projectIcon" src="images/projects/powerMasterLogo.png">
+          <span class="projectStatus">RELEASED</span>
           <h3>PowerMaster</h3>
           <p class="projectShowcase">
             Can't find the previously included power plans in your computer's control panel? Or do you just want to squeeze the most power efficiency or performance out of your device? PowerMaster is the app that solves this with an easy-to-use UI that allows you to quickly change your power mode with just a couple of clicks.
@@ -152,6 +185,7 @@
 
         <div class="projectShowcase" id="myMemes">
           <img class="projectPreview" src="images/projects/myMemesPreview.png">
+          <img class="projectIcon" src="images/projects/myMemesIcon.png">
           <h3>MyMemes.com</h3>
           <p class="projectShowcase">
             Where the memes are...
@@ -179,7 +213,49 @@
     </div>
 
     <div hidden class="portfolioSections" id="Contact">
-      <h1>Profiles</h1>
+      <h1 class="greeting">Profiles</h1>
+      <div class="showcaseContainer">
+        <div class="projectShowcase" id="gitHubContact">
+          <img class="projectPreview" src="images/welcomeImage.png">
+          <img class="projectIcon" src="images/github-mark-white.svg">
+          <span class="projectStatus">j-m-a-g</span>
+          <a
+            href="https://github.com/j-m-a-g"
+            class="profileLink"
+            target="_blank">
+            <h3 class="profileLink">GitHub</h3>
+          </a>
+        </div>
+
+        <div class="projectShowcase" id="dmojContact">
+          <img class="projectPreview" src="images/profiles/dmojPreview.png">
+          <img class="projectIcon" src="images/profiles/dmojLogo.png">
+          <span class="projectStatus">j_mag</span>
+          <a
+            href="https://dmoj.ca/user/j_mag"
+            class="profileLink"
+            target="_blank">
+            <h3 class="profileLink">DMOJ</h3>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="showcaseContainer">
+        <div class="projectShowcase" id="microsoftDeveloperAccount">
+          <img class="projectPreview" src="images/profiles/individualMicrosoftDeveloperAccountPreview.png">
+          <img class="projectIcon" src="images/profiles/microsoftStore.svg">
+          <span class="projectStatus">J. Maghamez</span>
+          <a
+            href="https://apps.microsoft.com/search/publisher?name=J.+Maghamez&hl=en-us&gl=US"
+            class="profileLink"
+            target="_blank">
+            <h3 class="profileLink">Microsoft Developer Account</h3>
+          </a>
+        </div>
+
+      </div>
+
     </div>
 
   </div>

@@ -1,13 +1,11 @@
 :root {
   --darkAccent900: black;
   --darkAccent800: #262626;
+  --darkAccent700: #434343;
 
   --lightAccent000: white;
   --lightAccent100: #e9e9e9;
   --lightAccent400: #9d9d9d;
-
-  --blueAccent500: #4a26fd;
-  --blueAccent600: #3722f6;
 }
 
 html {
@@ -127,7 +125,7 @@ footer {
   border-radius: 100px;
 }
 
-/* Styles for the home page */
+/* Styles for the Home page */
 #Home {
   background-color: var(--darkAccent800);
   animation-name: revealSections;
@@ -137,7 +135,7 @@ footer {
 
 #welcomeSection {
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
     url(images/welcomeImage.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -209,28 +207,66 @@ img.projectLink {
   height: 16px;
 }
 
+.projectStatus {
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  background-color: rgba(0, 0, 0, 0.125);
+  font-size: 10px;
+  cursor: default;
+}
+
+#calcyoulus {
+  background-color: rgba(170, 242, 85, 0.25);
+}
 #emotionDetector {
   background-color: rgba(0, 0, 0, 0.25);
 }
-
 #escapeXavier {
   background-color: rgba(89, 133, 255, 0.25);
 }
-
+#expandCalculator {
+  background-color: rgba(33, 150, 243, 0.25);
+}
 #howOldIsMyPlant {
   background-color: rgba(184, 134, 11, 0.25);
 }
-
 #josephSays {
   background-color: rgba(220, 20, 60, 0.25);
 }
-
 #powerMaster {
   background-color: rgba(234, 196, 82, 0.25);
 }
-
 #myMemes {
   background-color: rgba(255, 255, 0, 0.25);
+}
+
+/* Styles for the Contact page */
+#Contact {
+  background-color: rgba(170, 242, 85, 0.125);
+}
+
+.profileLink {
+  cursor: pointer;
+}
+a.profileLink {
+  color: cornflowerblue;
+  text-decoration-line: none;
+}
+a.profileLink:hover {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+}
+
+#gitHubContact {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+#dmojContact {
+  background-color: rgb(247, 216, 4, 0.25);
+}
+#microsoftDeveloperAccount {
+  background-color: rgba(0, 0, 255, 0.25);
 }
 
 /* ANIMATIONS */
@@ -243,7 +279,7 @@ img.projectLink {
 
 @keyframes projectShowcaseLift {
   to {
-    box-shadow: 5px 5px 10px black;
+    box-shadow: 5px 5px 10px var(--darkAccent900);
   }
 }
 
@@ -253,7 +289,7 @@ img.projectLink {
   }
   to {
       opacity: 1;
-      box-shadow: 10px 7.5px 0px var(--lightAccent400);
+      box-shadow: 10px 7.5px 0px var(--darkAccent700);
   }
 }
 
