@@ -4,7 +4,7 @@ const mainContent = document.getElementById("mainContent");
 
 const home = document.getElementById("Home");
 const experience = document.getElementById("Experience");
-const contact = document.getElementById("Contact");
+const profiles = document.getElementById("Profiles");
 
 function switchSection(currentShowing) {
   // Reset the states of the individual divisions
@@ -14,10 +14,11 @@ function switchSection(currentShowing) {
   experience.hidden = true;
   experience.style.animation = "";
 
-  contact.hidden = true;
-  contact.style.animation = "";
+  profiles.hidden = true;
+  profiles.style.animation = "";
 
   document.getElementById("pageTitle").innerHTML = currentShowing + " | maghamez.com";
+  document.getElementById("openPanelTitle").innerHTML = "| " + currentShowing;
   document.getElementById(currentShowing).hidden = false;
   document.getElementById(currentShowing).style.animation = "revealSections 1s forwards";
 }

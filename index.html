@@ -11,7 +11,7 @@
 <body onload="if (window.innerWidth <= 587) { siteNavigation.hidden = true; openPanel.hidden = false }">
   <header hidden id="openPanel">
     <button class="toggleNavigationButtons" onclick="hideMenu(false)">☰ MENU</button>
-    <span id="navigationTitle">| maghamez.com</span>
+    <span id="openPanelTitle" class="navigationTitle">| Home</span>
   </header>
 
   <nav id="siteNavigation">
@@ -22,7 +22,7 @@
       ╳ COLLAPSE
     </button>
     <br>
-    <span id="navigationTitle">maghamez.com</span>
+    <span class="navigationTitle">maghamez.com</span>
     <br>
     <br>
     <img id="profilePicture" src="images/profilePhoto.jpeg">
@@ -38,7 +38,7 @@
       <button class="navigationLinks" onclick="switchSection('Experience')">EXPERIENCE</button>
       <br>
       <br>
-      <button class="navigationLinks" onclick="switchSection('Contact')">CONTACT</button>
+      <button class="navigationLinks" onclick="switchSection('Profiles')">PROFILES</button>
     </div>
 
   </nav>
@@ -253,8 +253,8 @@
 
     </div>
 
-    <div hidden class="portfolioSections" id="Contact">
-      <h1 class="greeting">Profiles</h1>
+    <div hidden class="portfolioSections" id="Profiles">
+      <br>
       <div class="showcaseContainer">
         <div class="projectShowcase" id="gitHubContact">
           <img class="projectPreview" src="images/welcomeImage.png">

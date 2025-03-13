@@ -109,6 +109,11 @@ footer {
   margin-bottom: 20px;
 }
 
+.navigationTitle {
+  color: dimgray;
+  cursor: default;
+}
+
 #openPanel {
   position: fixed;
   padding-left: 10px;
@@ -119,11 +124,6 @@ footer {
   position: fixed;
   padding: 30px;
   background-color: var(--darkAccent800);
-}
-
-#navigationTitle {
-  color: dimgray;
-  cursor: default;
 }
 
 #profilePicture {
