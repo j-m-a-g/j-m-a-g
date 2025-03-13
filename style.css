@@ -290,7 +290,7 @@ a.profileLink:hover {
 
 @keyframes projectShowcaseLift {
   to {
-    box-shadow: 5px 5px 10px var(--darkAccent900);
+    box-shadow: 5px 5px 20px var(--darkAccent900);
   }
 }
 
