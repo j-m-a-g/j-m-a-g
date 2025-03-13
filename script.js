@@ -21,6 +21,11 @@ function switchSection(currentShowing) {
   document.getElementById("openPanelTitle").innerHTML = "| " + currentShowing;
   document.getElementById(currentShowing).hidden = false;
   document.getElementById(currentShowing).style.animation = "revealSections 1s forwards";
+
+  if (window.innerWidth <= 600) {
+    siteNavigation.hidden = true;
+    openPanel.hidden = false;
+  }
 }
 
 function hideMenu(isHidden) {
@@ -33,7 +38,7 @@ function hideMenu(isHidden) {
     openPanel.style.animation = "toggleMenuAnimation 1s forwards";
   }
   else {
-    if (window.innerWidth > 587) {
+    if (window.innerWidth > 600) {
       mainContent.style.marginLeft = "210px";
     }
     siteNavigation.hidden = false;

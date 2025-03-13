@@ -114,6 +114,13 @@ footer {
   cursor: default;
 }
 
+.placeholderDiv {
+  margin: 5px;
+  padding: 20px;
+  border-radius: 10px;
+  width: 50%;
+}
+
 #openPanel {
   position: fixed;
   padding-left: 10px;
@@ -126,12 +133,9 @@ footer {
   background-color: var(--darkAccent800);
 }
 
-#profilePicture {
-  justify-self: center;
-  margin-bottom: 20px;
-  width: 48px;
-  height: 48px;
-  border-radius: 100px;
+#navigationLinksContainer {
+  padding-top: 50%;
+  padding-bottom: 50%;
 }
 
 /* Styles for the Home page */
@@ -245,6 +249,7 @@ img.projectLink {
   height: 56px;
   filter: invert(100%);
   margin-right: 5px;
+  margin-bottom: 2px;
 }
 
 #python {
@@ -255,6 +260,25 @@ img.projectLink {
 }
 #cSharpXAML {
   background-image: linear-gradient(rgba(66, 165, 245, 0.125), rgba(87, 48, 214, 0.125));
+}
+#kotlin {
+  background-color: rgba(127, 82, 255, 0.125);
+}
+
+#dotNet {
+  background-color: rgba(81, 43, 212, 0.125);
+}
+#git {
+  background-color: rgba(240, 80, 50, 0.125);
+}
+#roboflow {
+  background-color: rgba(103, 6, 206, 0.125);
+}
+#visualStudio {
+  background-color: rgba(91, 66, 145, 0.125);
+}
+#vscode {
+  background-color: rgba(4, 107, 177, 0.125);
 }
 
 /* Styles for the Contact page */
@@ -278,6 +302,9 @@ a.profileLink:hover {
 }
 #microsoftDeveloperAccount {
   background-color: rgba(0, 0, 255, 0.125);
+}
+#email {
+  background-color: rgba(0, 0, 0, 0.125);
 }
 
 /* ANIMATIONS */
@@ -317,11 +344,16 @@ a.profileLink:hover {
 @media only screen and (max-width: 600px) {
   #siteNavigation {
     position: sticky;
-    height: 515px;
+    height: 300px;
   }
 
   #mainContent {
     margin-left: 10px;
+  }
+
+  #navigationLinksContainer {
+    padding-top: 5%;
+    padding-bottom: 0px;
   }
 
   .showcaseContainer {

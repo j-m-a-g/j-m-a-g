@@ -8,7 +8,7 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body onload="if (window.innerWidth <= 587) { siteNavigation.hidden = true; openPanel.hidden = false }">
+<body onload="if (window.innerWidth <= 600) { siteNavigation.hidden = true; openPanel.hidden = false }">
   <header hidden id="openPanel">
     <button class="toggleNavigationButtons" onclick="hideMenu(false)">☰ MENU</button>
     <span id="openPanelTitle" class="navigationTitle">| Home</span>
@@ -25,8 +25,7 @@
     <span class="navigationTitle">maghamez.com</span>
     <br>
     <br>
-    <img id="profilePicture" src="images/profilePhoto.jpeg">
-    <div style="padding-top: 50%; padding-bottom: 50%">
+    <div id="navigationLinksContainer">
       <button
         style="text-align: left; line-height: 18px"
         class="navigationLinks"
@@ -212,8 +211,9 @@
     </div>
 
     <div hidden class="portfolioSections" id="Experience">
+      <h1 style="margin-left: 5px">I Have Experience in...</h1>
       <div class="welcomeSection" style="height: 200px; background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(images/programmingLanguages.png)">
-        <h1 class="greeting" style="padding-top: 78.5px; padding-bottom: 78.5px">Languages</h1>
+        <h1 class="greeting" style="padding-top: 78.5px; padding-bottom: 78.5px">Programming Languages</h1>
       </div>
       <hr>
       <div class="showcaseContainer">
@@ -229,26 +229,50 @@
           <h3>HTML, CSS, and JavaScript</h3>
         </div>
 
-      </div>
-
-      <div class="showcaseContainer">
         <div class="projectShowcase" id="cSharpXAML">
           <img class="languageIcon" src="images/programmingLanguages/cSharp.png">
           <img class="languageIcon" src="images/programmingLanguages/XAML.png">
           <h3>C# and XAML</h3>
         </div>
 
+        <div class="projectShowcase" id="kotlin">
+          <img class="languageIcon" src="images/programmingLanguages/kotlin.svg">
+          <h3>Kotlin</h3>
+        </div>
+
       </div>
 
       <h1 class="greeting">Tools & Frameworks</h1>
       <div class="showcaseContainer">
-        <div class="projectShowcase">
+        <div class="projectShowcase" id="dotNet">
+          <img class="languageIcon" src="images/programmingLanguages/dotnet.svg">
           <h3>.NET</h3>
+          <p class="projectShowcase">UWP, WPF, Windows Forms, and Xamarin Forms.</p>
         </div>
 
-        <div class="projectShowcase">
+        <div class="projectShowcase" id="git">
+          <img class="languageIcon" src="images/programmingLanguages/git.svg">
           <h3>Git</h3>
         </div>
+
+        <div class="projectShowcase" id="roboflow">
+          <img class="languageIcon" src="images/programmingLanguages/roboflow.svg">
+          <h3>Roboflow</h3>
+        </div>
+
+        <div class="projectShowcase" id="visualStudio">
+          <img class="languageIcon" src="images/programmingLanguages/code000000.svg">
+          <h3>Visual Studio 2019 and 2022</h3>
+        </div>
+
+        <div class="projectShowcase" id="vscode">
+          <img
+            style="filter: none"
+            class="languageIcon"
+            src="images/programmingLanguages/vscode-alt.svg">
+          <h3>Visual Studio Code</h3>
+        </div>
+
       </div>
 
     </div>
@@ -308,7 +332,7 @@
   </div>
   
   <footer>
-    J. Maghamez - 2025
+    2025 - J. Maghamez
   </footer>
 
   <script type="text/javascript" src="script.js"></script>
