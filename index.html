@@ -27,17 +27,28 @@
     <br>
     <div id="navigationLinksContainer">
       <button
+        id="homeSection"
         style="text-align: left; line-height: 18px"
-        class="navigationLinks"
+        class="navigationLinks currentSection"
         onclick="switchSection('Home')">
         HOME<br><span style="opacity: 0.5">/PROJECTS</span>
       </button>
       <br>
       <br>
-      <button class="navigationLinks" onclick="switchSection('Experience')">EXPERIENCE</button>
+      <button
+        id="experienceSection"
+        class="navigationLinks"
+        onclick="switchSection('Experience')">
+        EXPERIENCE
+      </button>
       <br>
       <br>
-      <button class="navigationLinks" onclick="switchSection('Profiles')">PROFILES</button>
+      <button
+        id="profilesSection"
+        class="navigationLinks"
+        onclick="switchSection('Profiles')">
+        PROFILES
+      </button>
     </div>
 
   </nav>

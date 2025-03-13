@@ -3,8 +3,11 @@ const openPanel = document.getElementById("openPanel");
 const mainContent = document.getElementById("mainContent");
 
 const home = document.getElementById("Home");
+const homeSection = document.getElementById("homeSection");
 const experience = document.getElementById("Experience");
+const experienceSection = document.getElementById("experienceSection");
 const profiles = document.getElementById("Profiles");
+const profilesSection = document.getElementById("profilesSection");
 
 function switchSection(currentShowing) {
   // Reset the states of the individual divisions
@@ -28,11 +31,28 @@ function switchSection(currentShowing) {
   if (profiles.style.animation != "") {
     profiles.style.animation = "";
   }
+
+  homeSection.className = "navigationLinks";
+  experienceSection.className = "navigationLinks";
+  profilesSection.className = "navigationLinks";
   
   document.getElementById("pageTitle").innerHTML = currentShowing + " | maghamez.com";
   document.getElementById("openPanelTitle").innerHTML = "| " + currentShowing;
+
   document.getElementById(currentShowing).hidden = false;
   document.getElementById(currentShowing).style.animation = "revealSections 1s forwards";
+
+  switch (currentShowing) {
+    case "Home":
+      homeSection.className += " currentSection";
+      break;
+    case "Experience":
+      experienceSection.className += " currentSection";
+      break;
+    case "Profiles":
+      profilesSection.className += " currentSection";
+      break;
+  }
 
   if (window.innerWidth <= 600) {
     siteNavigation.hidden = true;

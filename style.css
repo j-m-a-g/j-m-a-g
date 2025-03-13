@@ -65,6 +65,14 @@ footer {
   background-color: var(--darkAccent800);
 }
 
+.welcomeSection {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
 #mainContent {
   margin-left: 210px;
   margin-right: 20px;
@@ -101,12 +109,8 @@ footer {
   animation-fill-mode: forwards;
 }
 
-.welcomeSection {
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 400px;
-  border-radius: 10px;
-  margin-bottom: 20px;
+.currentSection {
+  background-color: var(--darkAccent700);
 }
 
 .navigationTitle {
