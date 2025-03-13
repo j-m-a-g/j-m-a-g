@@ -23,7 +23,6 @@ function switchSection(currentShowing) {
 }
 
 function hideMenu(isHidden) {
-  console.log(window.innerWidth)
   if (isHidden) {
     mainContent.style.marginLeft = "10px";
     siteNavigation.hidden = true;
