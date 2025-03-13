@@ -8,21 +8,27 @@ const profiles = document.getElementById("Profiles");
 
 function switchSection(currentShowing) {
   // Reset the states of the individual divisions
-  if (home.hidden == false && home.style.animation != "") {
+  if (home.hidden == false) {
     home.hidden = true;
+  }
+  if (home.style.animation != "") {
     home.style.animation = "";
   }
 
-  if (experience.hidden == false && experience.style.animation != "") {
+  if (experience.hidden == false) {
     experience.hidden = true;
+  }
+  if (experience.style.animation != "") {
     experience.style.animation = "";
   }
 
-  if (profiles.hidden == false && profiles.style.animation != "") {
+  if (profiles.hidden == false) {
     profiles.hidden = true;
+  }
+  if (profiles.style.animation != "") {
     profiles.style.animation = "";
   }
-
+  
   document.getElementById("pageTitle").innerHTML = currentShowing + " | maghamez.com";
   document.getElementById("openPanelTitle").innerHTML = "| " + currentShowing;
   document.getElementById(currentShowing).hidden = false;
