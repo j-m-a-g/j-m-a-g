@@ -8,14 +8,20 @@ const profiles = document.getElementById("Profiles");
 
 function switchSection(currentShowing) {
   // Reset the states of the individual divisions
-  home.hidden = true;
-  home.style.animation = "";
+  if (home.hidden == false && home.style.animation != "") {
+    home.hidden = true;
+    home.style.animation = "";
+  }
 
-  experience.hidden = true;
-  experience.style.animation = "";
+  if (experience.hidden == false && experience.style.animation != "") {
+    experience.hidden = true;
+    experience.style.animation = "";
+  }
 
-  profiles.hidden = true;
-  profiles.style.animation = "";
+  if (profiles.hidden == false && profiles.style.animation != "") {
+    profiles.hidden = true;
+    profiles.style.animation = "";
+  }
 
   document.getElementById("pageTitle").innerHTML = currentShowing + " | maghamez.com";
   document.getElementById("openPanelTitle").innerHTML = "| " + currentShowing;
