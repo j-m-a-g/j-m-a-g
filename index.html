@@ -10,301 +10,309 @@
 </head>
 
 <body onload="if (window.innerWidth <= 600) { siteNavigation.hidden = true; openPanel.hidden = false }">
-  <header hidden id="openPanel">
-    <button class="toggleNavigationButtons" onclick="hideMenu(false)">☰ MENU</button>
-    <span class="navigationTitle" id="openPanelTitle">| Home</span>
-  </header>
+<header hidden id="openPanel">
+  <button class="toggleNavigationButtons" onclick="hideMenu(false)">☰ MENU</button>
+  <span class="navigationTitle" id="openPanelTitle">| Home</span>
+</header>
 
-  <nav id="siteNavigation">
+<nav id="siteNavigation">
+  <button
+      class="toggleNavigationButtons"
+      onclick="hideMenu(true)"
+      style="margin-bottom: 20px">
+    ╳ COLLAPSE
+  </button>
+  <br>
+  <span class="navigationTitle">maghamez.com</span>
+  <br>
+  <br>
+  <div id="navigationLinksContainer">
     <button
-        class="toggleNavigationButtons"
-        onclick="hideMenu(true)"
-        style="margin-bottom: 20px">
-      ╳ COLLAPSE
+        class="navigationLinks currentSection"
+        id="homeSection"
+        onclick="switchSection('Home')"
+        style="text-align: left; line-height: 18px">
+      HOME<br><span style="opacity: 0.5">/PROJECTS</span>
     </button>
     <br>
-    <span class="navigationTitle">maghamez.com</span>
+    <br>
+    <button
+        class="navigationLinks"
+        id="experienceSection"
+        onclick="switchSection('Experience')">
+      EXPERIENCE
+    </button>
     <br>
     <br>
-    <div id="navigationLinksContainer">
-      <button
-          class="navigationLinks currentSection"
-          id="homeSection"
-          onclick="switchSection('Home')"
-          style="text-align: left; line-height: 18px">
-        HOME<br><span style="opacity: 0.5">/PROJECTS</span>
-      </button>
-      <br>
-      <br>
-      <button
-          class="navigationLinks"
-          id="experienceSection"
-          onclick="switchSection('Experience')">
-        EXPERIENCE
-      </button>
-      <br>
-      <br>
-      <button
-          class="navigationLinks"
-          id="profilesSection"
-          onclick="switchSection('Profiles')">
-        PROFILES
-      </button>
-    </div>
-  </nav>
+    <button
+        class="navigationLinks"
+        id="profilesSection"
+        onclick="switchSection('Profiles')">
+      PROFILES
+    </button>
+  </div>
+</nav>
 
-  <div id="mainContent">
-    <div class="portfolioSections" id="Home">
-      <div class="welcomeSection"
-           style="background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(images/welcomeImage.png)">
-        <h1 class="greeting" style="padding-top: 178.5px; padding-bottom: 178.5px">Welcome to <span id="webpageName">maghamez</span>.com
-        </h1>
-      </div>
-      <hr>
-      <div class="showcaseContainer">
-        <div class="projectShowcase" id="calcyoulus">
-          <img class="projectPreview" src="images/projects/calcyoulusPreview.png">
-          <img class="projectIcon" src="images/projects/calcyoulusIconRounded.svg">
-          <span class="projectStatus">IN PROGRESS</span>
-          <h3>Calcyoulus</h3>
-          <p class="projectShowcase">
-            Rewrite of the Expand Calculator Xamarin Forms Android app.
-          </p>
-          <a class="projectLink" href="https://github.com/j-m-a-g/Calcyoulus" target="_blank">
-            <img class="projectLink" src="images/github-mark-white.svg">
-            View Repository
-          </a>
-        </div>
-        <div class="projectShowcase" id="emotionDetector">
-          <img class="projectPreview" src="images/projects/emotionDetectorPreview.png">
-          <img class="projectIcon" src="images/projects/slightlySmilingFace.png">
-          <h3>Emotion Detector</h3>
-          <p class="projectShowcase">
-            See if you are happy, sad, angry, disgusted, or more! Built with the Roboflow inference API and pipelines.
-          </p>
-          <a class="projectLink" href="https://github.com/j-m-a-g/EmotionDetector" target="_blank">
-            <img class="projectLink" src="images/github-mark-white.svg">
-            View Repository
-          </a>
-        </div>
-      </div>
-      <div class="showcaseContainer">
-        <div class="projectShowcase" id="escapeXavier">
-          <img class="projectPreview" src="images/projects/escapeXavierPreview.png">
-          <img class="projectIcon" src="images/projects/key5985E1.svg">
-          <h3>Escape Xavier</h3>
-          <p class="projectShowcase">
-            An escape room that will test your technological skills.
-          </p>
-          <a class="projectLink" href="https://j-m-a-g.github.io/EscapeXavier" target="_blank">
-            <img class="projectLink" src="images/open_in_new_FFFFFF.svg">
-            Open
-          </a>
-          <br>
-          <br>
-          <a class="projectLink" href="https://github.com/j-m-a-g/EscapeXavier" target="_blank">
-            <img class="projectLink" src="images/github-mark-white.svg">
-            View Repository
-          </a>
-        </div>
-        <div class="projectShowcase" id="expandCalculator">
-          <img class="projectPreview" src="images/projects/expandCalculatorPreview.png">
-          <img class="projectIcon" src="images/projects/expandCalculatorIcon.png">
-          <span class="projectStatus">INCOMPLETE</span>
-          <h3>Expand Calculator</h3>
-          <p class="projectShowcase">
-            More than just your ordinary calculator.
-          </p>
-          <a class="projectLink" href="https://github.com/j-m-a-g/ExpandCalculator" target="_blank">
-            <img class="projectLink" src="images/github-mark-white.svg">
-            View Repository
-          </a>
-        </div>
-      </div>
-      <div class="showcaseContainer">
-        <div class="projectShowcase" id="howOldIsMyPlant">
-          <img class="projectPreview" src="images/projects/howOldIsMyPlantPreview.png">
-          <img class="projectIcon" src="images/projects/pottedPlant.png">
-          <h3>How Old Is My Plant</h3>
-          <p class="projectShowcase">
-            See how old your potted plant might be in a range of 1-4 weeks or if it is ready to be harvested!
-          </p>
-          <a class="projectLink" href="https://github.com/j-m-a-g/HowOldIsMyPlant" target="_blank">
-            <img class="projectLink" src="images/github-mark-white.svg">
-            View Repository
-          </a>
-        </div>
-        <div class="projectShowcase" id="josephSays">
-          <img class="projectPreview" src="images/projects/josephSaysPreview.png">
-          <img class="projectIcon" src="images/projects/speechBalloon.png">
-          <h3>Joseph Says</h3>
-          <p class="projectShowcase">
-            A game where following instructions is the only advice you'll need.
-          </p>
-          <a class="projectLink" href="https://j-m-a-g.github.io/JosephSays" target="_blank">
-            <img class="projectLink" src="images/open_in_new_FFFFFF.svg">
-            Open
-          </a>
-          <br>
-          <br>
-          <a class="projectLink" href="https://github.com/j-m-a-g/JosephSays" target="_blank">
-            <img class="projectLink" src="images/github-mark-white.svg">
-            View Repository
-          </a>
-          <br>
-          <br>
-        </div>
-      </div>
-      <div class="showcaseContainer">
-        <div class="projectShowcase" id="josephSays">
-          <img class="projectPreview" src="images/projects/josephSaysOfflinePreview.png">
-          <img
-              class="projectIcon"
-              src="images/projects/comicBubbleD16D6A.svg"
-              style="rotate: 90deg">
-          <span class="projectStatus">RELEASED</span>
-          <h3>Joseph Says: Offline Edition</h3>
-          <p class="projectShowcase">Now playable offline! Play anytime and anywhere. No internet connection required.</p>
-          <script src="https://get.microsoft.com/badge/ms-store-badge.bundled.js" type="module"></script>
-          <ms-store-badge
-              animation="on"
-              language="en-ca"
-              productid="9PF227CW6RVG"
-              size="small"
-              theme="dark"
-              window-mode="full">
-          </ms-store-badge>
-        </div>
-        <div class="projectShowcase" id="powerMaster">
-          <img class="projectPreview" src="images/projects/powerMasterPreview.svg">
-          <img class="projectIcon" src="images/projects/powerMasterLogo.png">
-          <span class="projectStatus">RELEASED</span>
-          <br>
-          <br>
-          <img alt="GitHub Release"
-               src="https://img.shields.io/github/v/release/j-m-a-g/powermaster?include_prereleases&style=for-the-badge&label=Latest%20Version">
-          <h3>PowerMaster</h3>
-          <p class="projectShowcase">
-            Can't find the previously included power plans in your computer's control panel? Or do you just want to
-            squeeze the most power efficiency or performance out of your device? PowerMaster is the app that solves this
-            with an easy-to-use UI that allows you to quickly change your power mode with just a couple of clicks.
-          </p>
-          <a class="projectLink" href="https://j-m-a-g.github.io/powermaster" target="_blank">
-            <img class="projectLink" src="images/open_in_new_FFFFFF.svg">
-            Open
-          </a>
-        </div>
-      </div>
-      <a class="navigationLinks" href="#Home" style="margin-left: 10px; text-decoration-line: none">⤒ BACK TO TOP</a>
+<div id="mainContent">
+  <div class="portfolioSections" id="Home">
+    <div class="welcomeSection"
+         style="background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(images/welcomeImage.png)">
+      <h1 class="greeting" style="padding-top: 178px; padding-bottom: 178px">Welcome to <span
+          id="webpageName">maghamez</span>.com
+      </h1>
     </div>
-    <div class="portfolioSections" hidden id="Experience">
-      <h1 style="margin-left: 5px">I Have Experience in...</h1>
-      <div class="welcomeSection"
-           style="height: 200px; background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(images/programmingLanguages.png)">
-        <h1 class="greeting" style="padding-top: 78.5px; padding-bottom: 78.5px">Programming Languages</h1>
+    <hr>
+    <div class="showcaseContainer">
+      <div class="projectShowcase" id="calcyoulus">
+        <img class="projectPreview" src="images/projects/calcyoulusPreview.png">
+        <img class="projectIcon" src="images/projects/calcyoulusIconRounded.svg">
+        <span class="projectStatus">IN PROGRESS</span>
+        <h3>Calcyoulus</h3>
+        <p class="projectShowcase">
+          Rewrite of the Expand Calculator Xamarin Forms Android app.
+        </p>
+        <a class="projectLink" href="https://github.com/j-m-a-g/Calcyoulus" target="_blank">
+          <img class="projectLink" src="images/github-mark-white.svg">
+          View Repository
+        </a>
       </div>
-      <hr>
-      <div class="showcaseContainer">
-        <div class="projectShowcase" id="python">
-          <img class="languageIcon" src="images/programmingLanguages/python.svg" style="fill: blue;">
-          <h3>Python</h3>
-        </div>
-        <div class="projectShowcase" id="htmlCSSJS">
-          <img class="languageIcon" src="images/programmingLanguages/html5.svg">
-          <img class="languageIcon" src="images/programmingLanguages/css.svg">
-          <img class="languageIcon" src="images/programmingLanguages/javascript.svg">
-          <h3>HTML, CSS, and JavaScript</h3>
-        </div>
-        <div class="projectShowcase" id="cSharpXAML">
-          <img class="languageIcon" src="images/programmingLanguages/cSharp.png">
-          <img class="languageIcon" src="images/programmingLanguages/XAML.png">
-          <h3>C# and XAML</h3>
-        </div>
-        <div class="projectShowcase" id="kotlin">
-          <img class="languageIcon" src="images/programmingLanguages/kotlin.svg">
-          <h3>Kotlin</h3>
-        </div>
-      </div>
-      <h1 class="greeting">Tools & Frameworks</h1>
-      <div class="showcaseContainer">
-        <div class="projectShowcase" id="dotNet">
-          <img class="languageIcon" src="images/programmingLanguages/dotnet.svg">
-          <h3>.NET</h3>
-          <p class="projectShowcase">UWP, WPF, Windows Forms, and Xamarin Forms.</p>
-        </div>
-        <div class="projectShowcase" id="git">
-          <img class="languageIcon" src="images/programmingLanguages/git.svg">
-          <h3>Git</h3>
-        </div>
-        <div class="projectShowcase" id="roboflow">
-          <img class="languageIcon" src="images/programmingLanguages/roboflow.svg">
-          <h3>Roboflow</h3>
-        </div>
-        <div class="projectShowcase" id="visualStudio">
-          <img class="languageIcon" src="images/programmingLanguages/code000000.svg">
-          <h3>Visual Studio 2019 and 2022</h3>
-        </div>
-        <div class="projectShowcase" id="vscode">
-          <img
-              class="languageIcon"
-              src="images/programmingLanguages/vscode-alt.svg"
-              style="filter: none">
-          <h3>Visual Studio Code</h3>
-        </div>
+      <div class="projectShowcase" id="emotionDetector">
+        <img class="projectPreview" src="images/projects/emotionDetectorPreview.png">
+        <img class="projectIcon" src="images/projects/slightlySmilingFace.png">
+        <h3>Emotion Detector</h3>
+        <p class="projectShowcase">
+          See if you are happy, sad, angry, disgusted, or more! Built with the Roboflow inference API and pipelines.
+        </p>
+        <a class="projectLink" href="https://github.com/j-m-a-g/EmotionDetector" target="_blank">
+          <img class="projectLink" src="images/github-mark-white.svg">
+          View Repository
+        </a>
       </div>
     </div>
-    <div class="portfolioSections" hidden id="Profiles">
-      <br>
-      <div class="showcaseContainer">
-        <div class="projectShowcase" id="gitHubContact">
-          <img class="projectPreview" src="images/welcomeImage.png">
-          <img class="projectIcon" src="images/github-mark-white.svg">
-          <span class="projectStatus">j-m-a-g</span>
-          <a
-              class="profileLink"
-              href="https://github.com/j-m-a-g"
-              target="_blank">
-            <h3 class="profileLink">GitHub</h3>
-          </a>
-        </div>
-        <div class="projectShowcase" id="dmojContact">
-          <img class="projectPreview" src="images/profiles/dmojPreview.png">
-          <img class="projectIcon" src="images/profiles/dmojLogo.png">
-          <span class="projectStatus">j_mag</span>
-          <a
-              class="profileLink"
-              href="https://dmoj.ca/user/j_mag"
-              target="_blank">
-            <h3 class="profileLink">DMOJ</h3>
-          </a>
-        </div>
+    <div class="showcaseContainer">
+      <div class="projectShowcase" id="escapeXavier">
+        <img class="projectPreview" src="images/projects/escapeXavierPreview.png">
+        <img class="projectIcon" src="images/projects/key5985E1.svg">
+        <h3>Escape Xavier</h3>
+        <p class="projectShowcase">
+          An escape room that will test your technological skills.
+        </p>
+        <a class="projectLink" href="https://j-m-a-g.github.io/EscapeXavier" target="_blank">
+          <img class="projectLink" src="images/open_in_new_FFFFFF.svg">
+          Open
+        </a>
+        <br>
+        <br>
+        <a class="projectLink" href="https://github.com/j-m-a-g/EscapeXavier" target="_blank">
+          <img class="projectLink" src="images/github-mark-white.svg">
+          View Repository
+        </a>
       </div>
-      <div class="showcaseContainer">
-        <div class="projectShowcase" id="microsoftDeveloperAccount">
-          <img class="projectPreview" src="images/profiles/individualMicrosoftDeveloperAccountPreview.png">
-          <img class="projectIcon" src="images/profiles/microsoftStore.svg">
-          <span class="projectStatus">J. Maghamez</span>
-          <a
-              class="profileLink"
-              href="https://apps.microsoft.com/search/publisher?name=J.+Maghamez&hl=en-us&gl=US"
-              target="_blank">
-            <h3 class="profileLink">Microsoft Developer Account</h3>
-          </a>
-        </div>
-        <div class="projectShowcase" id="email">
-          <img class="languageIcon" src="images/profiles/alternateEmail000000.svg">
-          <h3>Email</h3>
-          <p class="projectShowcase">maghamez@gmail.com</p>
-        </div>
+      <div class="projectShowcase" id="expandCalculator">
+        <img class="projectPreview" src="images/projects/expandCalculatorPreview.png">
+        <img class="projectIcon" src="images/projects/expandCalculatorIcon.png">
+        <span class="projectStatus">INCOMPLETE</span>
+        <h3>Expand Calculator</h3>
+        <p class="projectShowcase">
+          More than just your ordinary calculator.
+        </p>
+        <a class="projectLink" href="https://github.com/j-m-a-g/ExpandCalculator" target="_blank">
+          <img class="projectLink" src="images/github-mark-white.svg">
+          View Repository
+        </a>
+      </div>
+    </div>
+    <div class="showcaseContainer">
+      <div class="projectShowcase" id="howOldIsMyPlant">
+        <img class="projectPreview" src="images/projects/howOldIsMyPlantPreview.png">
+        <img class="projectIcon" src="images/projects/pottedPlant.png">
+        <h3>How Old Is My Plant</h3>
+        <p class="projectShowcase">
+          See how old your potted plant might be in a range of 1-4 weeks or if it is ready to be harvested!
+        </p>
+        <a class="projectLink" href="https://github.com/j-m-a-g/HowOldIsMyPlant" target="_blank">
+          <img class="projectLink" src="images/github-mark-white.svg">
+          View Repository
+        </a>
+      </div>
+      <div class="projectShowcase" id="josephSays">
+        <img class="projectPreview" src="images/projects/josephSaysPreview.png">
+        <img class="projectIcon" src="images/projects/speechBalloon.png">
+        <h3>Joseph Says</h3>
+        <p class="projectShowcase">
+          A game where following instructions is the only advice you'll need.
+        </p>
+        <a class="projectLink" href="https://j-m-a-g.github.io/JosephSays" target="_blank">
+          <img class="projectLink" src="images/open_in_new_FFFFFF.svg">
+          Open
+        </a>
+        <br>
+        <br>
+        <a class="projectLink" href="https://github.com/j-m-a-g/JosephSays" target="_blank">
+          <img class="projectLink" src="images/github-mark-white.svg">
+          View Repository
+        </a>
+        <br>
+        <br>
+      </div>
+    </div>
+    <div class="showcaseContainer">
+      <div class="projectShowcase" id="josephSaysOffline">
+        <img class="projectPreview" src="images/projects/josephSaysOfflinePreview.png">
+        <img
+            class="projectIcon"
+            src="images/projects/comicBubbleD16D6A.svg"
+            style="rotate: 90deg">
+        <span class="projectStatus">RELEASED</span>
+        <h3>Joseph Says: Offline Edition</h3>
+        <p class="projectShowcase">Now playable offline! Play anytime and anywhere. No internet connection required.</p>
+        <script src="https://get.microsoft.com/badge/ms-store-badge.bundled.js" type="module"></script>
+        <ms-store-badge
+            animation="on"
+            language="en-ca"
+            productid="9PF227CW6RVG"
+            size="small"
+            theme="dark"
+            window-mode="full">
+        </ms-store-badge>
+      </div>
+      <div class="projectShowcase" id="powerMaster">
+        <img class="projectPreview" src="images/projects/powerMasterPreview.svg">
+        <img class="projectIcon" src="images/projects/powerMasterLogo.png">
+        <span class="projectStatus">RELEASED</span>
+        <br>
+        <br>
+        <img alt="GitHub Release"
+             src="https://img.shields.io/github/v/release/j-m-a-g/powermaster?include_prereleases&style=for-the-badge&label=Latest%20Version">
+        <h3>PowerMaster</h3>
+        <p class="projectShowcase">
+          Can't find the previously included power plans in your computer's control panel? Or do you just want to
+          squeeze the most power efficiency or performance out of your device? PowerMaster is the app that solves this
+          with an easy-to-use UI that allows you to quickly change your power mode with just a couple of clicks.
+        </p>
+        <a class="projectLink" href="https://j-m-a-g.github.io/powermaster" target="_blank">
+          <img class="projectLink" src="images/open_in_new_FFFFFF.svg">
+          Open
+        </a>
+      </div>
+    </div>
+    <a class="navigationLinks" href="#Home" style="margin-left: 10px; text-decoration-line: none">⤒ BACK TO TOP</a>
+  </div>
+  <div class="portfolioSections" hidden id="Experience">
+    <h1 style="margin-left: 5px">I Have Experience in...</h1>
+    <div class="welcomeSection"
+         style="height: 200px; background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(images/programmingLanguages.png)">
+      <h1 class="greeting" style="padding-top: 78px; padding-bottom: 78px">Programming Languages</h1>
+    </div>
+    <hr>
+    <div class="showcaseContainer">
+      <div class="projectShowcase" id="python">
+        <img class="languageIcon" src="images/programmingLanguages/python.svg">
+        <h3>Python</h3>
+      </div>
+      <div class="projectShowcase" id="htmlCSSJS">
+        <img class="languageIcon" src="images/programmingLanguages/html5.svg">
+        <img class="languageIcon" src="images/programmingLanguages/css.svg">
+        <img class="languageIcon" src="images/programmingLanguages/javascript.svg">
+        <h3>HTML, CSS, and JavaScript</h3>
+      </div>
+      <div class="projectShowcase" id="cSharpXAML">
+        <img class="languageIcon" src="images/programmingLanguages/cSharp.png">
+        <img class="languageIcon" src="images/programmingLanguages/XAML.png">
+        <h3>C# and XAML</h3>
+      </div>
+    </div>
+    <div class="showcaseContainer">
+      <div class="projectShowcase" id="kotlin">
+        <img class="languageIcon" src="images/programmingLanguages/kotlin.svg">
+        <h3>Kotlin</h3>
+      </div>
+      <div class="placeholderDiv"></div>
+      <div class="placeholderDiv"></div>
+    </div>
+    <h1 class="greeting">Tools & Frameworks</h1>
+    <div class="showcaseContainer">
+      <div class="projectShowcase" id="dotNet">
+        <img class="languageIcon" src="images/programmingLanguages/dotnet.svg">
+        <h3>.NET</h3>
+        <p class="projectShowcase">UWP, WPF, Windows Forms, and Xamarin Forms.</p>
+      </div>
+      <div class="projectShowcase" id="git">
+        <img class="languageIcon" src="images/programmingLanguages/git.svg">
+        <h3>Git</h3>
+      </div>
+      <div class="projectShowcase" id="roboflow">
+        <img class="languageIcon" src="images/programmingLanguages/roboflow.svg">
+        <h3>Roboflow</h3>
+      </div>
+    </div>
+    <div class="showcaseContainer">
+      <div class="projectShowcase" id="visualStudio">
+        <img class="languageIcon" src="images/programmingLanguages/code000000.svg">
+        <h3>Visual Studio 2019 and 2022</h3>
+      </div>
+      <div class="projectShowcase" id="vscode">
+        <img
+            class="languageIcon"
+            src="images/programmingLanguages/vscode-alt.svg"
+            style="filter: none">
+        <h3>Visual Studio Code</h3>
+      </div>
+      <div class="placeholderDiv"></div>
+    </div>
+  </div>
+  <div class="portfolioSections" hidden id="Profiles">
+    <br>
+    <div class="showcaseContainer">
+      <div class="projectShowcase" id="gitHubContact">
+        <img class="projectPreview" src="images/welcomeImage.png">
+        <img class="projectIcon" src="images/github-mark-white.svg">
+        <span class="projectStatus">j-m-a-g</span>
+        <a
+            class="profileLink"
+            href="https://github.com/j-m-a-g"
+            target="_blank">
+          <h3 class="profileLink">GitHub</h3>
+        </a>
+      </div>
+      <div class="projectShowcase" id="dmojContact">
+        <img class="projectPreview" src="images/profiles/dmojPreview.png">
+        <img class="projectIcon" src="images/profiles/dmojLogo.png">
+        <span class="projectStatus">j_mag</span>
+        <a
+            class="profileLink"
+            href="https://dmoj.ca/user/j_mag"
+            target="_blank">
+          <h3 class="profileLink">DMOJ</h3>
+        </a>
+      </div>
+    </div>
+    <div class="showcaseContainer">
+      <div class="projectShowcase" id="microsoftDeveloperAccount">
+        <img class="projectPreview" src="images/profiles/individualMicrosoftDeveloperAccountPreview.png">
+        <img class="projectIcon" src="images/profiles/microsoftStore.svg">
+        <span class="projectStatus">J. Maghamez</span>
+        <a
+            class="profileLink"
+            href="https://apps.microsoft.com/search/publisher?name=J.+Maghamez&hl=en-us&gl=US"
+            target="_blank">
+          <h3 class="profileLink">Microsoft Developer Account</h3>
+        </a>
+      </div>
+      <div class="projectShowcase" id="email">
+        <img class="languageIcon" src="images/profiles/alternateEmail000000.svg">
+        <h3>Email</h3>
+        <p class="projectShowcase">maghamez@gmail.com</p>
       </div>
     </div>
   </div>
+</div>
 
-  <footer>
-    2025 - J. Maghamez
-  </footer>
+<footer>
+  2025 - J. Maghamez
+</footer>
 
-  <script src="script.js" type="text/javascript"></script>
+<script src="script.js" type="text/javascript"></script>
 </body>
 
 </html>

@@ -204,6 +204,7 @@ p.projectShowcase {
 }
 
 a.projectLink {
+  border-radius: 5px;
   padding: 5px;
   text-decoration-line: none;
   color: cornflowerblue;
@@ -250,7 +251,7 @@ img.projectLink {
   background-color: rgba(184, 134, 11, 0.125);
 }
 
-#josephSays {
+#josephSays, #josephSaysOffline {
   background-color: rgba(220, 20, 60, 0.125);
 }
 
