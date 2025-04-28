@@ -89,6 +89,7 @@ footer {
   letter-spacing: 4px;
   cursor: default;
 }
+
 .navigationLinks:hover {
   animation-name: navigationFade;
   animation-duration: 0.25s;
@@ -103,6 +104,7 @@ footer {
   padding-right: 0px;
   letter-spacing: 4px;
 }
+
 .toggleNavigationButtons:hover {
   animation-name: navigationFade;
   animation-duration: 0.25s;
@@ -158,6 +160,7 @@ footer {
 .greeting {
   text-align: center;
 }
+
 h1.greeting {
   font-weight: 300;
 }
@@ -172,11 +175,13 @@ div.projectShowcase {
   border-radius: 10px;
   width: 50%;
 }
+
 div.projectShowcase:hover {
   animation-name: projectShowcaseLift;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
 }
+
 p.projectShowcase {
   opacity: 0.5;
   cursor: default;
@@ -197,15 +202,18 @@ p.projectShowcase {
 .projectLink {
   opacity: 0.75;
 }
+
 a.projectLink {
   padding: 5px;
   text-decoration-line: none;
   color: cornflowerblue;
 }
+
 a.projectLink:hover {
   border-radius: 5px;
   background-color: rgba(0, 0, 0, 0.125);
 }
+
 img.projectLink {
   margin-right: 5px;
   width: 16px;
@@ -225,24 +233,31 @@ img.projectLink {
 #calcyoulus {
   background-color: rgba(170, 242, 85, 0.125);
 }
+
 #emotionDetector {
   background-color: rgba(0, 0, 0, 0.125);
 }
+
 #escapeXavier {
   background-color: rgba(89, 133, 255, 0.125);
 }
+
 #expandCalculator {
   background-color: rgba(33, 150, 243, 0.125);
 }
+
 #howOldIsMyPlant {
   background-color: rgba(184, 134, 11, 0.125);
 }
+
 #josephSays {
   background-color: rgba(220, 20, 60, 0.125);
 }
+
 #powerMaster {
   background-color: rgba(234, 196, 82, 0.125);
 }
+
 #myMemes {
   background-color: rgba(255, 255, 0, 0.125);
 }
@@ -259,12 +274,15 @@ img.projectLink {
 #python {
   background-color: rgba(55, 118, 171, 0.125);
 }
+
 #htmlCSSJS {
   background-image: conic-gradient(rgba(227, 79, 38, 0.125), rgba(102, 51, 153, 0.125), rgba(247, 223, 30, 0.125));
 }
+
 #cSharpXAML {
   background-image: linear-gradient(rgba(66, 165, 245, 0.125), rgba(87, 48, 214, 0.125));
 }
+
 #kotlin {
   background-color: rgba(127, 82, 255, 0.125);
 }
@@ -272,15 +290,19 @@ img.projectLink {
 #dotNet {
   background-color: rgba(81, 43, 212, 0.125);
 }
+
 #git {
   background-color: rgba(240, 80, 50, 0.125);
 }
+
 #roboflow {
   background-color: rgba(103, 6, 206, 0.125);
 }
+
 #visualStudio {
   background-color: rgba(91, 66, 145, 0.125);
 }
+
 #vscode {
   background-color: rgba(4, 107, 177, 0.125);
 }
@@ -289,10 +311,12 @@ img.projectLink {
 .profileLink {
   cursor: pointer;
 }
+
 a.profileLink {
   color: cornflowerblue;
   text-decoration-line: none;
 }
+
 a.profileLink:hover {
   text-decoration-line: underline;
   text-decoration-style: wavy;
@@ -301,12 +325,15 @@ a.profileLink:hover {
 #gitHubContact {
   background-color: rgba(0, 0, 0, 0.125);
 }
+
 #dmojContact {
   background-color: rgb(247, 216, 4, 0.125);
 }
+
 #microsoftDeveloperAccount {
   background-color: rgba(0, 0, 255, 0.125);
 }
+
 #email {
   background-color: rgba(0, 0, 0, 0.125);
 }
@@ -314,8 +341,8 @@ a.profileLink:hover {
 /* ANIMATIONS */
 @keyframes navigationFade {
   to {
-      background-color: var(--lightAccent100);
-      color: var(--darkAccent800);
+    background-color: var(--lightAccent100);
+    color: var(--darkAccent800);
   }
 }
 
@@ -327,11 +354,11 @@ a.profileLink:hover {
 
 @keyframes revealSections {
   from {
-      opacity: 0;
+    opacity: 0;
   }
   to {
-      opacity: 1;
-      box-shadow: 10px 7.5px 0px var(--darkAccent700);
+    opacity: 1;
+    box-shadow: 10px 7.5px 0px var(--darkAccent700);
   }
 }
 
@@ -340,7 +367,7 @@ a.profileLink:hover {
     opacity: 0;
   }
   to {
-      opacity: 1;
+    opacity: 1;
   }
 }
 

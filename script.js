@@ -11,31 +11,31 @@ const profilesSection = document.getElementById("profilesSection");
 
 function switchSection(currentShowing) {
   // Reset the states of the individual divisions
-  if (home.hidden == false) {
+  if (home.hidden === false) {
     home.hidden = true;
   }
-  if (home.style.animation != "") {
+  if (home.style.animation !== "") {
     home.style.animation = "";
   }
 
-  if (experience.hidden == false) {
+  if (experience.hidden === false) {
     experience.hidden = true;
   }
-  if (experience.style.animation != "") {
+  if (experience.style.animation !== "") {
     experience.style.animation = "";
   }
 
-  if (profiles.hidden == false) {
+  if (profiles.hidden === false) {
     profiles.hidden = true;
   }
-  if (profiles.style.animation != "") {
+  if (profiles.style.animation !== "") {
     profiles.style.animation = "";
   }
 
   homeSection.className = "navigationLinks";
   experienceSection.className = "navigationLinks";
   profilesSection.className = "navigationLinks";
-  
+
   document.getElementById("pageTitle").innerHTML = currentShowing + " | maghamez.com";
   document.getElementById("openPanelTitle").innerHTML = "| " + currentShowing;
 
@@ -68,8 +68,7 @@ function hideMenu(isHidden) {
 
     openPanel.hidden = false;
     openPanel.style.animation = "toggleMenuAnimation 1s forwards";
-  }
-  else {
+  } else {
     if (window.innerWidth > 600) {
       mainContent.style.marginLeft = "210px";
     }

@@ -1,1 +1,28 @@
-<svg version="1.1" viewBox="0.0 0.0 512.0 512.0" fill="none" stroke="none" stroke-linecap="square" stroke-miterlimit="10" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><clipPath id="p.0"><path d="m0 0l512.0 0l0 512.0l-512.0 0l0 -512.0z" clip-rule="nonzero"/></clipPath><g clip-path="url(#p.0)"><path fill="#1c5bd8" d="m0 0l512.0 0l0 512.0l-512.0 0z" fill-rule="evenodd"/><g filter="url(#shadowFilter-p.1)"><use xlink:href="#p.1" transform="matrix(1.0 0.0 0.0 1.0 10.606601837270334 10.606601837270354)"/></g><defs><filter id="shadowFilter-p.1" filterUnits="userSpaceOnUse"><feGaussianBlur in="SourceAlpha" stdDeviation="0.0" result="blur"/><feComponentTransfer in="blur" color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0" intercept="0.0"/><feFuncG type="linear" slope="0" intercept="0.0"/><feFuncB type="linear" slope="0" intercept="0.0"/><feFuncA type="linear" slope="1.0" intercept="0"/></feComponentTransfer></filter></defs><g id="p.1"><path fill="#ffffff" d="m213.14857 97.96756l0 78.213394l87.0717 0l0 107.58864c0 17.461151 -3.9293213 30.72586 -11.787933 39.794067c-7.810425 9.0199585 -18.826965 13.529968 -33.049652 13.529968c-13.354843 0 -23.961594 -4.582367 -31.82022 -13.74704c-7.8104095 -9.212952 -11.715622 -20.620544 -11.715622 -34.22287l-80.92461 0c0 22.525848 5.616745 43.339325 16.85025 62.44046c11.281708 19.101135 26.468643 34.295227 45.560776 45.582275c19.140335 11.238831 39.96811 16.858215 62.483337 16.858215c23.383041 0 44.62062 -5.185272 63.712753 -15.555847c19.14035 -10.370605 34.182648 -25.540558 45.12686 -45.50995c10.944244 -20.017578 16.416351 -43.821655 16.416351 -71.4122l0 -183.55911z" fill-rule="evenodd"/></g></g></svg>
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0.0 0.0 512.0 512.0" fill="none" stroke="none"
+     stroke-linecap="square" stroke-miterlimit="10" xmlns="http://www.w3.org/2000/svg">
+    <clipPath id="p.0">
+        <path d="m0 0l512.0 0l0 512.0l-512.0 0l0 -512.0z" clip-rule="nonzero"/>
+    </clipPath>
+    <g clip-path="url(#p.0)">
+        <path fill="#1c5bd8" d="m0 0l512.0 0l0 512.0l-512.0 0z" fill-rule="evenodd"/>
+        <g filter="url(#shadowFilter-p.1)">
+            <use xlink:href="#p.1" transform="matrix(1.0 0.0 0.0 1.0 10.606601837270334 10.606601837270354)"/>
+        </g>
+        <defs>
+            <filter id="shadowFilter-p.1" filterUnits="userSpaceOnUse">
+                <feGaussianBlur in="SourceAlpha" stdDeviation="0.0" result="blur"/>
+                <feComponentTransfer in="blur" color-interpolation-filters="sRGB">
+                    <feFuncR type="linear" slope="0" intercept="0.0"/>
+                    <feFuncG type="linear" slope="0" intercept="0.0"/>
+                    <feFuncB type="linear" slope="0" intercept="0.0"/>
+                    <feFuncA type="linear" slope="1.0" intercept="0"/>
+                </feComponentTransfer>
+            </filter>
+        </defs>
+        <g id="p.1">
+            <path fill="#ffffff"
+                  d="m213.14857 97.96756l0 78.213394l87.0717 0l0 107.58864c0 17.461151 -3.9293213 30.72586 -11.787933 39.794067c-7.810425 9.0199585 -18.826965 13.529968 -33.049652 13.529968c-13.354843 0 -23.961594 -4.582367 -31.82022 -13.74704c-7.8104095 -9.212952 -11.715622 -20.620544 -11.715622 -34.22287l-80.92461 0c0 22.525848 5.616745 43.339325 16.85025 62.44046c11.281708 19.101135 26.468643 34.295227 45.560776 45.582275c19.140335 11.238831 39.96811 16.858215 62.483337 16.858215c23.383041 0 44.62062 -5.185272 63.712753 -15.555847c19.14035 -10.370605 34.182648 -25.540558 45.12686 -45.50995c10.944244 -20.017578 16.416351 -43.821655 16.416351 -71.4122l0 -183.55911z"
+                  fill-rule="evenodd"/>
+        </g>
+    </g>
+</svg>
