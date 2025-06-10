@@ -16,7 +16,7 @@ body {
   background-color: var(--darkAccent900);
   color: var(--lightAccent000);
   margin: 0px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h1 {
@@ -251,7 +251,8 @@ img.projectLink {
   background-color: rgba(184, 134, 11, 0.125);
 }
 
-#josephSays, #josephSaysOffline {
+#josephSays,
+#josephSaysOffline {
   background-color: rgba(220, 20, 60, 0.125);
 }
 
@@ -277,11 +278,18 @@ img.projectLink {
 }
 
 #htmlCSSJS {
-  background-image: conic-gradient(rgba(227, 79, 38, 0.125), rgba(102, 51, 153, 0.125), rgba(247, 223, 30, 0.125));
+  background-image: conic-gradient(
+    rgba(227, 79, 38, 0.125),
+    rgba(102, 51, 153, 0.125),
+    rgba(247, 223, 30, 0.125)
+  );
 }
 
 #cSharpXAML {
-  background-image: linear-gradient(rgba(66, 165, 245, 0.125), rgba(87, 48, 214, 0.125));
+  background-image: linear-gradient(
+    rgba(66, 165, 245, 0.125),
+    rgba(87, 48, 214, 0.125)
+  );
 }
 
 #kotlin {
