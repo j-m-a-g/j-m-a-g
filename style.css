@@ -58,7 +58,7 @@ footer {
   margin-bottom: auto;
 }
 
-.portfolioSections {
+div.portfolioSections {
   padding-top: 1px;
   padding-left: 10px;
   padding-right: 10px;
@@ -67,7 +67,7 @@ footer {
   background-color: var(--darkAccent800);
 }
 
-.welcomeSection {
+div.welcomeSection {
   background-size: cover;
   background-repeat: no-repeat;
   height: 400px;
@@ -98,7 +98,7 @@ footer {
   animation-fill-mode: forwards;
 }
 
-.toggleNavigationButtons {
+button.toggleNavigationButtons {
   background-color: transparent;
   border: none;
   color: var(--lightAccent000);
@@ -107,22 +107,22 @@ footer {
   letter-spacing: 4px;
 }
 
-.toggleNavigationButtons:hover {
+button.toggleNavigationButtons:hover {
   animation-name: navigationFade;
   animation-duration: 0.25s;
   animation-fill-mode: forwards;
 }
 
-.currentSection {
+button.currentSection {
   background-color: var(--darkAccent700);
 }
 
-.navigationTitle {
+span.navigationTitle {
   color: dimgray;
   cursor: default;
 }
 
-.placeholderDiv {
+div.placeholderDiv {
   margin: 5px;
   padding: 20px;
   border-radius: 10px;
@@ -159,7 +159,7 @@ footer {
   text-decoration-style: wavy;
 }
 
-.greeting {
+h1.greeting {
   text-align: center;
 }
 
@@ -167,7 +167,7 @@ h1.greeting {
   font-weight: 300;
 }
 
-.showcaseContainer {
+div.showcaseContainer {
   display: flex;
 }
 
@@ -189,12 +189,12 @@ p.projectShowcase {
   cursor: default;
 }
 
-.projectPreview {
+img.projectPreview {
   width: 100%;
   border-radius: 5px;
 }
 
-.projectIcon {
+img.projectIcon {
   margin-top: -25px;
   margin-bottom: -10px;
   width: 56px;
@@ -223,7 +223,7 @@ img.projectLink {
   height: 16px;
 }
 
-.projectStatus {
+span.projectStatus {
   padding-left: 5px;
   padding-right: 5px;
   padding-top: 2px;
@@ -267,7 +267,7 @@ img.projectLink {
 }
 
 /* Styles for the Experience page */
-.languageIcon {
+img.languageIcon {
   width: 56px;
   height: 56px;
   filter: invert(100%);
@@ -398,7 +398,7 @@ a.profileLink:hover {
     padding-bottom: 0px;
   }
 
-  .showcaseContainer {
+  div.showcaseContainer {
     display: block;
   }
 
