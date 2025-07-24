@@ -1,33 +1,27 @@
-const siteNavigation = document.getElementById("siteNavigation");
-const openPanel = document.getElementById("openPanel");
-const mainContent = document.getElementById("mainContent");
-
-const home = document.getElementById("Home");
-const homeSection = document.getElementById("homeSection");
 const experience = document.getElementById("Experience");
 const experienceSection = document.getElementById("experienceSection");
+const home = document.getElementById("Home");
+const homeSection = document.getElementById("homeSection");
+const mainContent = document.getElementById("mainContent");
+const openPanel = document.getElementById("openPanel");
+const openPanelTitle = document.getElementById("openPanelTitle");
 const profiles = document.getElementById("Profiles");
 const profilesSection = document.getElementById("profilesSection");
+const siteNavigation = document.getElementById("siteNavigation");
 
 function switchSection(currentShowing) {
   // Reset the states of the individual divisions
-  if (home.hidden === false) {
-    home.hidden = true;
-  }
+  home.hidden = true;
   if (home.style.animation !== "") {
     home.style.animation = "";
   }
 
-  if (experience.hidden === false) {
-    experience.hidden = true;
-  }
+  experience.hidden = true;
   if (experience.style.animation !== "") {
     experience.style.animation = "";
   }
 
-  if (profiles.hidden === false) {
-    profiles.hidden = true;
-  }
+  profiles.hidden = true;
   if (profiles.style.animation !== "") {
     profiles.style.animation = "";
   }
@@ -36,11 +30,12 @@ function switchSection(currentShowing) {
   experienceSection.className = "navigationLinks";
   profilesSection.className = "navigationLinks";
 
-  document.getElementById("pageTitle").innerHTML = currentShowing + " | maghamez.com";
-  document.getElementById("openPanelTitle").innerHTML = "| " + currentShowing;
+  document.title = `${currentShowing} | maghamez.com`;
+  openPanelTitle.innerHTML = `| ${currentShowing}`;
 
   document.getElementById(currentShowing).hidden = false;
-  document.getElementById(currentShowing).style.animation = "revealSections 1s forwards";
+  document.getElementById(currentShowing).style.animation =
+    "revealSections 1s forwards";
 
   switch (currentShowing) {
     case "Home":
@@ -61,21 +56,19 @@ function switchSection(currentShowing) {
 }
 
 function hideMenu(isHidden) {
+  siteNavigation.hidden = isHidden;
+  openPanel.hidden = !isHidden;
+
   if (isHidden) {
     mainContent.style.marginLeft = "10px";
-    siteNavigation.hidden = true;
     siteNavigation.style.animation = "";
-
-    openPanel.hidden = false;
     openPanel.style.animation = "toggleMenuAnimation 1s forwards";
   } else {
     if (window.innerWidth > 600) {
       mainContent.style.marginLeft = "210px";
     }
-    siteNavigation.hidden = false;
-    siteNavigation.style.animation = "toggleMenuAnimation 1s forwards";
 
-    openPanel.hidden = true;
+    siteNavigation.style.animation = "toggleMenuAnimation 1s forwards";
     openPanel.style.animation = "";
   }
 }

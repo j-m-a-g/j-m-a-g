@@ -1,11 +1,13 @@
 :root {
-  --darkAccent900: black;
+  --darkAccent900: #000000;
   --darkAccent800: #262626;
   --darkAccent700: #434343;
 
-  --lightAccent000: white;
+  --lightAccent000: #ffffff;
   --lightAccent100: #e9e9e9;
   --lightAccent400: #9d9d9d;
+
+  --opacityFactor: 0.2;
 }
 
 html {
@@ -212,7 +214,7 @@ a.projectLink {
 
 a.projectLink:hover {
   border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.125);
+  background-color: rgba(0, 0, 0, var(--opacityFactor));
 }
 
 img.projectLink {
@@ -226,42 +228,42 @@ img.projectLink {
   padding-right: 5px;
   padding-top: 2px;
   padding-bottom: 2px;
-  background-color: rgba(0, 0, 0, 0.125);
+  background-color: rgba(0, 0, 0, var(--opacityFactor));
   font-size: 10px;
   cursor: default;
 }
 
 #calcyoulus {
-  background-color: rgba(170, 242, 85, 0.125);
+  background-color: rgba(170, 242, 85, var(--opacityFactor));
 }
 
 #emotionDetector {
-  background-color: rgba(0, 0, 0, 0.125);
+  background-color: rgba(0, 0, 0, var(--opacityFactor));
 }
 
 #escapeXavier {
-  background-color: rgba(89, 133, 255, 0.125);
+  background-color: rgba(89, 133, 255, var(--opacityFactor));
 }
 
 #expandCalculator {
-  background-color: rgba(33, 150, 243, 0.125);
+  background-color: rgba(33, 150, 243, var(--opacityFactor));
 }
 
 #howOldIsMyPlant {
-  background-color: rgba(184, 134, 11, 0.125);
+  background-color: rgba(184, 134, 11, var(--opacityFactor));
 }
 
 #josephSays,
 #josephSaysOffline {
-  background-color: rgba(220, 20, 60, 0.125);
+  background-color: rgba(220, 20, 60, var(--opacityFactor));
 }
 
 #powerMaster {
-  background-color: rgba(234, 196, 82, 0.125);
+  background-color: rgba(234, 196, 82, var(--opacityFactor));
 }
 
-#myMemes {
-  background-color: rgba(255, 255, 0, 0.125);
+#noteMaster {
+  background-color: rgba(0, 142, 255, var(--opacityFactor));
 }
 
 /* Styles for the Experience page */
@@ -274,46 +276,46 @@ img.projectLink {
 }
 
 #python {
-  background-color: rgba(55, 118, 171, 0.125);
+  background-color: rgba(55, 118, 171, var(--opacityFactor));
 }
 
 #htmlCSSJS {
   background-image: conic-gradient(
-    rgba(227, 79, 38, 0.125),
-    rgba(102, 51, 153, 0.125),
-    rgba(247, 223, 30, 0.125)
+    rgba(227, 79, 38, var(--opacityFactor)),
+    rgba(102, 51, 153, var(--opacityFactor)),
+    rgba(247, 223, 30, var(--opacityFactor))
   );
 }
 
 #cSharpXAML {
   background-image: linear-gradient(
-    rgba(66, 165, 245, 0.125),
-    rgba(87, 48, 214, 0.125)
+    rgba(66, 165, 245, var(--opacityFactor)),
+    rgba(87, 48, 214, var(--opacityFactor))
   );
 }
 
 #kotlin {
-  background-color: rgba(127, 82, 255, 0.125);
+  background-color: rgba(127, 82, 255, var(--opacityFactor));
 }
 
 #dotNet {
-  background-color: rgba(81, 43, 212, 0.125);
+  background-color: rgba(81, 43, 212, var(--opacityFactor));
 }
 
 #git {
-  background-color: rgba(240, 80, 50, 0.125);
+  background-color: rgba(240, 80, 50, var(--opacityFactor));
 }
 
 #roboflow {
-  background-color: rgba(103, 6, 206, 0.125);
+  background-color: rgba(103, 6, 206, var(--opacityFactor));
 }
 
 #visualStudio {
-  background-color: rgba(91, 66, 145, 0.125);
+  background-color: rgba(91, 66, 145, var(--opacityFactor));
 }
 
 #vscode {
-  background-color: rgba(4, 107, 177, 0.125);
+  background-color: rgba(4, 107, 177, var(--opacityFactor));
 }
 
 /* Styles for the Contact page */
@@ -332,19 +334,19 @@ a.profileLink:hover {
 }
 
 #gitHubContact {
-  background-color: rgba(0, 0, 0, 0.125);
+  background-color: rgba(0, 0, 0, var(--opacityFactor));
 }
 
 #dmojContact {
-  background-color: rgb(247, 216, 4, 0.125);
+  background-color: rgb(247, 216, 4, var(--opacityFactor));
 }
 
 #microsoftDeveloperAccount {
-  background-color: rgba(0, 0, 255, 0.125);
+  background-color: rgba(0, 0, 255, var(--opacityFactor));
 }
 
 #email {
-  background-color: rgba(0, 0, 0, 0.125);
+  background-color: rgba(0, 0, 0, var(--opacityFactor));
 }
 
 /* ANIMATIONS */
