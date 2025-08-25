@@ -1,0 +1,438 @@
+:root {
+  --darkAccent900: #000000;
+  --darkAccent800: #262626;
+  --darkAccent700: #434343;
+
+  --lightAccent000: #ffffff;
+  --lightAccent100: #e9e9e9;
+
+  --opacityFactor: 0.2;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--darkAccent900);
+  color: var(--lightAccent000);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0px;
+}
+
+h1 {
+  cursor: default;
+  font-weight: 400;
+}
+
+h3 {
+  cursor: default;
+  font-weight: 400;
+}
+
+hr {
+  border-style: solid;
+  margin-bottom: 15px;
+  opacity: 0.125;
+  width: 80%;
+}
+
+footer {
+  background-color: var(--darkAccent800);
+  border-radius: 5px 0px 0px 0px;
+  cursor: default;
+  float: right;
+  margin-top: 20px;
+  opacity: 0.5;
+  padding: 10px;
+}
+
+.centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.middle {
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+div.portfolioSections {
+  background-color: var(--darkAccent800);
+  border-radius: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 1px;
+}
+
+div.welcomeSection {
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  height: 400px;
+  margin-bottom: 20px;
+}
+
+#mainContent {
+  margin-left: 210px;
+  margin-right: 20px;
+  padding-top: 25px;
+}
+
+/* Styles for the site's navigation */
+.navigationLinks {
+  background-color: transparent;
+  border-radius: 5px;
+  border: none;
+  color: var(--lightAccent000);
+  cursor: default;
+  letter-spacing: 4px;
+  padding-left: 4px;
+  padding-right: 0px;
+  padding-top: 2px;
+}
+
+.navigationLinks:hover {
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+  animation-name: navigationFade;
+
+  img.navigationLinks {
+    filter: invert(100%);
+  }
+}
+
+img.navigationLinks {
+  margin-right: 5px;
+  opacity: 75%;
+  width: 16px;
+}
+
+img.navigationLinks:hover {
+  animation: none;
+}
+
+button.toggleNavigationButtons {
+  background-color: transparent;
+  border: none;
+  color: var(--lightAccent000);
+  letter-spacing: 4px;
+  padding-left: 4px;
+  padding-right: 0px;
+}
+
+button.toggleNavigationButtons:hover {
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+  animation-name: navigationFade;
+}
+
+button.currentSection {
+  background-color: var(--darkAccent700);
+}
+
+span.navigationTitle {
+  color: dimgray;
+  cursor: default;
+}
+
+div.placeholderDiv {
+  border-radius: 10px;
+  margin: 5px;
+  padding: 20px;
+  width: 50%;
+}
+
+#openPanel {
+  padding-left: 10px;
+  position: fixed;
+}
+
+#siteNavigation {
+  background-color: var(--darkAccent800);
+  height: 100%;
+  padding: 20px;
+  position: fixed;
+}
+
+#navigationLinksContainer {
+  padding-bottom: 50%;
+  padding-top: 50%;
+}
+
+/* Styles for the Home page */
+#Home {
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-name: revealSections;
+}
+
+#webpageName:hover {
+  text-decoration-color: red;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+}
+
+h1.greeting {
+  text-align: center;
+}
+
+h1.greeting {
+  font-weight: 300;
+}
+
+div.showcaseContainer {
+  display: flex;
+}
+
+div.projectShowcase {
+  border-radius: 10px;
+  margin: 5px;
+  padding: 20px;
+  width: 50%;
+}
+
+div.projectShowcase:hover {
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-name: projectShowcaseLift;
+}
+
+p.projectShowcase {
+  cursor: default;
+  opacity: 0.5;
+}
+
+img.projectPreview {
+  border-radius: 5px;
+  width: 100%;
+}
+
+img.projectIcon {
+  height: 56px;
+  margin-bottom: -10px;
+  margin-top: -25px;
+  width: 56px;
+}
+
+.projectLink {
+  opacity: 0.75;
+}
+
+a.projectLink {
+  border-radius: 5px;
+  color: cornflowerblue;
+  padding: 5px;
+  text-decoration-line: none;
+}
+
+a.projectLink:hover {
+  background-color: rgba(0, 0, 0, var(--opacityFactor));
+  border-radius: 5px;
+}
+
+img.projectLink {
+  height: 16px;
+  margin-right: 5px;
+  width: 16px;
+}
+
+span.projectStatus {
+  background-color: rgba(0, 0, 0, var(--opacityFactor));
+  cursor: default;
+  font-size: 10px;
+  padding-bottom: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+}
+
+#calcyoulus {
+  background-color: rgba(170, 242, 85, var(--opacityFactor));
+}
+
+#emotionDetector {
+  background-color: rgba(0, 0, 0, var(--opacityFactor));
+}
+
+#escapeXavier {
+  background-color: rgba(89, 133, 255, var(--opacityFactor));
+}
+
+#expandCalculator {
+  background-color: rgba(33, 150, 243, var(--opacityFactor));
+}
+
+#howOldIsMyPlant {
+  background-color: rgba(184, 134, 11, var(--opacityFactor));
+}
+
+#josephSays,
+#josephSaysOffline {
+  background-color: rgba(220, 20, 60, var(--opacityFactor));
+}
+
+#powerMaster {
+  background-color: rgba(234, 196, 82, var(--opacityFactor));
+}
+
+#noteMaster {
+  background-color: rgba(0, 142, 255, var(--opacityFactor));
+}
+
+/* Styles for the Experience page */
+img.languageIcon {
+  filter: invert(100%);
+  height: 56px;
+  margin-bottom: 2px;
+  margin-right: 5px;
+  width: 56px;
+}
+
+#python {
+  background-color: rgba(55, 118, 171, var(--opacityFactor));
+}
+
+#htmlCSSJS {
+  background-image: conic-gradient(
+    rgba(227, 79, 38, var(--opacityFactor)),
+    rgba(102, 51, 153, var(--opacityFactor)),
+    rgba(247, 223, 30, var(--opacityFactor))
+  );
+}
+
+#cSharpXAML {
+  background-image: linear-gradient(
+    rgba(66, 165, 245, var(--opacityFactor)),
+    rgba(87, 48, 214, var(--opacityFactor))
+  );
+}
+
+#java {
+  background-image: linear-gradient(
+    rgba(248, 152, 32, var(--opacityFactor)),
+    rgba(83, 130, 161, var(--opacityFactor))
+  );
+}
+
+#dotNet {
+  background-color: rgba(81, 43, 212, var(--opacityFactor));
+}
+
+#aframe {
+  background-color: rgba(239, 45, 94, var(--opacityFactor));
+}
+
+#git {
+  background-color: rgba(240, 80, 50, var(--opacityFactor));
+}
+
+#JSDelivr {
+  background-color: rgba(232, 77, 61, var(--opacityFactor));
+}
+
+#roboflow {
+  background-color: rgba(103, 6, 206, var(--opacityFactor));
+}
+
+#sublimeText {
+  background-color: rgba(255, 152, 0, var(--opacityFactor));
+}
+
+#visualStudio {
+  background-color: rgba(91, 66, 145, var(--opacityFactor));
+}
+
+#vscode {
+  background-color: rgba(4, 107, 177, var(--opacityFactor));
+}
+
+/* Styles for the Contact page */
+.profileLink {
+  cursor: pointer;
+}
+
+a.profileLink {
+  color: cornflowerblue;
+  text-decoration-line: none;
+}
+
+a.profileLink:hover {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+}
+
+#gitHubContact {
+  background-color: rgba(0, 0, 0, var(--opacityFactor));
+}
+
+#dmojContact {
+  background-color: rgb(247, 216, 4, var(--opacityFactor));
+}
+
+#microsoftDeveloperAccount {
+  background-color: rgba(0, 0, 255, var(--opacityFactor));
+}
+
+#email {
+  background-color: rgba(0, 0, 0, var(--opacityFactor));
+}
+
+/* ANIMATIONS */
+@keyframes navigationFade {
+  to {
+    background-color: var(--lightAccent100);
+    color: var(--darkAccent800);
+  }
+}
+
+@keyframes projectShowcaseLift {
+  to {
+    box-shadow: 5px 5px 20px var(--darkAccent900);
+  }
+}
+
+@keyframes revealSections {
+  from {
+    opacity: 0;
+  }
+  to {
+    box-shadow: 10px 7.5px 0px var(--darkAccent700);
+    opacity: 1;
+  }
+}
+
+@keyframes toggleMenuAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Accommodates webpage for mobile devices */
+@media only screen and (max-width: 600px) {
+  #siteNavigation {
+    height: 300px;
+    position: sticky;
+  }
+
+  #mainContent {
+    margin-left: 10px;
+  }
+
+  #navigationLinksContainer {
+    padding-bottom: 0px;
+    padding-top: 5%;
+  }
+
+  div.showcaseContainer {
+    display: block;
+  }
+
+  div.projectShowcase {
+    width: 90%;
+  }
+}

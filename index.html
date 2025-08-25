@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <link href="images/profilePicture.png" rel="icon" />
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="index.css" rel="stylesheet" type="text/css" />
     <meta charset="UTF-8" />
     <meta content="ie=edge" http-equiv="X-UA-Compatible" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
@@ -10,7 +10,9 @@
   </head>
 
   <body
-    onload="if (window.innerWidth <= 600) { siteNavigation.hidden = true; openPanel.hidden = false }"
+    onload="
+      if (window.innerWidth <= 600) { siteNavigation.hidden = true;
+        openPanel.hidden = false }"
   >
     <header hidden id="openPanel">
       <button class="toggleNavigationButtons" onclick="hideMenu(false)">
@@ -38,7 +40,14 @@
           onclick="switchSection('Home')"
           style="text-align: left; line-height: 18px"
         >
-          HOME/<br /><span style="opacity: 0.5">PROJECTS</span>
+          <table>
+            <tr>
+              <td>
+                <img class="navigationLinks" src="images/home_FFFFFF.svg" />
+              </td>
+              <td>HOME/<br /><span style="opacity: 0.5">PROJECTS</span></td>
+            </tr>
+          </table>
         </button>
         <br />
         <br />
@@ -47,7 +56,17 @@
           id="experienceSection"
           onclick="switchSection('Experience')"
         >
-          EXPERIENCE
+          <table>
+            <tr>
+              <td>
+                <img
+                  class="navigationLinks"
+                  src="images/person_play_FFFFFF.svg"
+                />
+              </td>
+              <td>EXPERIENCE</td>
+            </tr>
+          </table>
         </button>
         <br />
         <br />
@@ -56,7 +75,17 @@
           id="profilesSection"
           onclick="switchSection('Profiles')"
         >
-          PROFILES
+          <table>
+            <tr>
+              <td>
+                <img
+                  class="navigationLinks"
+                  src="images/account_circle_FFFFFF.svg"
+                />
+              </td>
+              <td>PROFILES</td>
+            </tr>
+          </table>
         </button>
       </div>
     </nav>
@@ -98,8 +127,11 @@
             />
             <h3>PowerMaster</h3>
             <p class="projectShowcase">
-              Can't find the previously included power plans in your computer's control panel? Or do you just want to squeeze the most power efficiency or performance out of your device? 
-              PowerMaster is the app that solves this with an easy-to-use UI that allows you to quickly change your power mode with just a couple of clicks.
+              Can't find the previously included power plans in your computer's
+              control panel? Or do you just want to squeeze the most power
+              efficiency or performance out of your device? PowerMaster is the
+              app that solves this with an easy-to-use UI that allows you to
+              quickly change your power mode with just a couple of clicks.
             </p>
             <a
               class="projectLink"
@@ -116,11 +148,13 @@
               src="images/projects/noteMasterPreview.png"
             />
             <img class="projectIcon" src="images/projects/noteMasterIcon.svg" />
-            <span class="projectStatus">RELEASED</span>
             <h3>NoteMaster</h3>
             <p class="projectShowcase">
-              Take your note-taking to another level with NoteMaster - a lightweight note-taking app for the web! 
-              Whether you are taking notes during a class or jotting down key points from a report, NoteMaster helps you do this effortlessly, all within the same app.
+              Take your note-taking to another level with NoteMaster - a
+              lightweight note-taking app for the web! Whether you are taking
+              notes during a class or jotting down key points from a report,
+              NoteMaster helps you do this effortlessly, all within the same
+              app.
             </p>
             <a
               class="projectLink"
@@ -138,7 +172,7 @@
               target="_blank"
             >
               <img class="projectLink" src="images/github-mark-white.svg" />
-              View Repository
+              GitHub Repo
             </a>
           </div>
         </div>
@@ -200,7 +234,7 @@
               target="_blank"
             >
               <img class="projectLink" src="images/github-mark-white.svg" />
-              View Repository
+              GitHub Repo
             </a>
             <br />
             <br />
@@ -224,7 +258,7 @@
               target="_blank"
             >
               <img class="projectLink" src="images/github-mark-white.svg" />
-              View Repository
+              GitHub Repo
             </a>
           </div>
           <div class="projectShowcase" id="expandCalculator">
@@ -246,7 +280,7 @@
               target="_blank"
             >
               <img class="projectLink" src="images/github-mark-white.svg" />
-              View Repository
+              GitHub Repo
             </a>
           </div>
         </div>
@@ -277,34 +311,9 @@
               target="_blank"
             >
               <img class="projectLink" src="images/github-mark-white.svg" />
-              View Repository
+              GitHub Repo
             </a>
           </div>
-          <div class="projectShowcase" id="calcyoulus">
-            <img
-              class="projectPreview"
-              src="images/projects/calcyoulusPreview.png"
-            />
-            <img
-              class="projectIcon"
-              src="images/projects/calcyoulusIconRounded.svg"
-            />
-            <span class="projectStatus">IN PROGRESS</span>
-            <h3>Calcyoulus</h3>
-            <p class="projectShowcase">
-              Rewrite of the Expand Calculator Xamarin Forms Android app.
-            </p>
-            <a
-              class="projectLink"
-              href="https://github.com/j-m-a-g/Calcyoulus"
-              target="_blank"
-            >
-              <img class="projectLink" src="images/github-mark-white.svg" />
-              View Repository
-            </a>
-          </div>
-        </div>
-        <div class="showcaseContainer">
           <div class="projectShowcase" id="emotionDetector">
             <img
               class="projectPreview"
@@ -325,7 +334,31 @@
               target="_blank"
             >
               <img class="projectLink" src="images/github-mark-white.svg" />
-              View Repository
+              GitHub Repo
+            </a>
+          </div>
+        </div>
+        <div class="showcaseContainer">
+          <div class="projectShowcase" id="calcyoulus">
+            <img
+              class="projectPreview"
+              src="images/projects/calcyoulusPreview.png"
+            />
+            <img
+              class="projectIcon"
+              src="images/projects/calcyoulusIconRounded.svg"
+            />
+            <h3>Calcyoulus</h3>
+            <p class="projectShowcase">
+              Rewrite of the Expand Calculator Xamarin Forms Android app.
+            </p>
+            <a
+              class="projectLink"
+              href="https://github.com/j-m-a-g/Calcyoulus"
+              target="_blank"
+            >
+              <img class="projectLink" src="images/github-mark-white.svg" />
+              GitHub Repo
             </a>
           </div>
           <div class="placeholderDiv"></div>
@@ -339,7 +372,7 @@
         >
       </div>
       <div class="portfolioSections" hidden id="Experience">
-        <h1 style="margin-left: 5px">I Have Experience in...</h1>
+        <h1 style="margin-left: 5px">I Have Experience In...</h1>
         <div
           class="welcomeSection"
           style="
@@ -355,12 +388,16 @@
         </div>
         <hr />
         <div class="showcaseContainer">
-          <div class="projectShowcase" id="python">
+          <div class="projectShowcase" id="cSharpXAML">
             <img
               class="languageIcon"
-              src="images/programmingLanguages/python.svg"
+              src="images/programmingLanguages/cSharp.png"
             />
-            <h3>Python</h3>
+            <img
+              class="languageIcon"
+              src="images/programmingLanguages/XAML.png"
+            />
+            <h3>C# and XAML</h3>
           </div>
           <div class="projectShowcase" id="htmlCSSJS">
             <img
@@ -377,25 +414,21 @@
             />
             <h3>HTML, CSS, and JavaScript</h3>
           </div>
-          <div class="projectShowcase" id="cSharpXAML">
+          <div class="projectShowcase" id="java">
             <img
               class="languageIcon"
-              src="images/programmingLanguages/cSharp.png"
+              src="images/programmingLanguages/java.svg"
             />
-            <img
-              class="languageIcon"
-              src="images/programmingLanguages/XAML.png"
-            />
-            <h3>C# and XAML</h3>
+            <h3>Java</h3>
           </div>
         </div>
         <div class="showcaseContainer">
-          <div class="projectShowcase" id="kotlin">
+          <div class="projectShowcase" id="python">
             <img
               class="languageIcon"
-              src="images/programmingLanguages/kotlin.svg"
+              src="images/programmingLanguages/python.svg"
             />
-            <h3>Kotlin</h3>
+            <h3>Python</h3>
           </div>
           <div class="placeholderDiv"></div>
           <div class="placeholderDiv"></div>
@@ -412,6 +445,14 @@
               UWP, WPF, Windows Forms, and Xamarin Forms.
             </p>
           </div>
+          <div class="projectShowcase" id="aframe">
+            <img
+              class="languageIcon"
+              src="images/programmingLanguages/aframe.svg"
+            />
+            <h3>A-Frame</h3>
+            <p class="projectShowcase">Built upon Three.js.</p>
+          </div>
           <div class="projectShowcase" id="git">
             <img
               class="languageIcon"
@@ -419,6 +460,15 @@
             />
             <h3>Git</h3>
           </div>
+          <div class="projectShowcase" id="JSDelivr">
+            <img
+              class="languageIcon"
+              src="images/programmingLanguages/jsdelivr.svg"
+            />
+            <h3>jsDelivr</h3>
+          </div>
+        </div>
+        <div class="showcaseContainer">
           <div class="projectShowcase" id="roboflow">
             <img
               class="languageIcon"
@@ -426,8 +476,13 @@
             />
             <h3>Roboflow</h3>
           </div>
-        </div>
-        <div class="showcaseContainer">
+          <div class="projectShowcase" id="sublimeText">
+            <img
+              class="languageIcon"
+              src="images/programmingLanguages/sublimetext.svg"
+            />
+            <h3>Sublime Text</h3>
+          </div>
           <div class="projectShowcase" id="visualStudio">
             <img
               class="languageIcon"
@@ -443,7 +498,6 @@
             />
             <h3>Visual Studio Code</h3>
           </div>
-          <div class="placeholderDiv"></div>
         </div>
       </div>
       <div class="portfolioSections" hidden id="Profiles">
@@ -504,6 +558,6 @@
 
     <footer>2025 - J. Maghamez</footer>
 
-    <script src="script-min.js" type="text/javascript"></script>
+    <script src="index.js"></script>
   </body>
 </html>
