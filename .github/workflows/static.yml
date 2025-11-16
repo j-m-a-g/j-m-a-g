@@ -45,3 +45,5 @@ jobs:
         uses: actions/deploy-pages@v4
       - name: generate-sitemap
         uses: cicirello/generate-sitemap@v1.10.4
+        with:
+          base-url-path: https://j-m-a-g.github.io/j-m-a-g/
