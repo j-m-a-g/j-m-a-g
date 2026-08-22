@@ -33,8 +33,8 @@ function switchSection(currentShowing) {
   document.title = `${currentShowing} | maghamez.com`;
   openPanelTitle.innerHTML = `| ${currentShowing}`;
 
-  document.getElementById(currentShowing).hidden = false;
-  document.getElementById(currentShowing).style.animation =
+  document.querySelector(`#${currentShowing}`).hidden = false;
+  document.querySelector(`#${currentShowing}`).style.animation =
     "revealSections 1s forwards";
 
   switch (currentShowing) {
